@@ -1,0 +1,1724 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Section.master.cs" Inherits="vorsinstrument.Section" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head><link rel="icon" href="http://vorsinstrument.ru/favicon.ico" type="image/x-icon"><link rel="icon" href="http://vorsinstrument.ru/favicon.ico" type="image/x-icon">
+<title>«Ворсинструмент» - интернет магазин строительного инструмента</title>
+<meta name="description" content="Ворсинструмент - поставка более 22500 наименований строительного инструмента ...">
+<meta name="keywords" content="«Ворсинструмент» интернет магазин строительного инструмента">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<!-- old -->
+<link href="/favicon.ico" rel="icon" type="image/x-icon">
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link rel="icon" href="http://vorsinstrument.ru/favicon.ico" type="image/x-icon">
+<!-- /old -->
+
+<link href="/css/style.css?v=51" rel="stylesheet" type="text/css"> 
+<!--
+<link href="/css/jquery.fancybox.css?v=1" rel="stylesheet" type="text/css"> 
+<link href="/css/jquery.mobilyslider.css?v=1" rel="stylesheet" type="text/css">  
+<link href="/css/jquery.jcarousel.css?v=1" rel="stylesheet" type="text/css"> 
+<script type="text/javascript" src="/javascripts/prototype.js?v=1"></script> 
+
+
+<script src="http://yes-credit.su/crem/js/jquery-1.8.0.min.js" type="text/javascript"></script> 
+<script src="http://yes-credit.su/crem/js/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script> 
+
+<script type="text/javascript" src="/javascripts/modernizr.min.js"></script> 
+<script type="text/javascript">
+    var popup_banner_show_time = '6500';
+    var popup_banner_delay = '2500';
+    </script>
+
+
+<script type="text/javascript" src="/javascripts/main.js?v=2"></script> 
+<script type="text/javascript" src="/javascripts/swfobject.js?v=1"></script> 
+<script type="text/javascript" src="/javascripts/preview_templates.js?v=1"></script> <
+<script type="text/javascript" src="/javascripts/jquery.jcarousel.min.js?v=1"></script> 
+
+<script src="/javascripts/search_autosuggest.js?v=2" type="text/javascript"></script> 
+<script src="/javascripts/main_new.js?v=9" type="text/javascript"></script> 
+<script src="/javascripts/jquery.placeholder.min.js?v=1" type="text/javascript"></script> 
+<script src="/javascripts/jquery.fancybox.js?v=1" type="text/javascript"></script> 
+<script src="/javascripts/jquery.mobilyslider.js?v=1" type="text/javascript"></script> 
+<script src="/javascripts/jquery.jcarousel.js?v=1" type="text/javascript"></script> 
+<script src="/javascripts/jquery.dropdown.js?v=3" type="text/javascript"></script> 
+<script src="/javascripts/crem.js" type="text/javascript"></script> 
+<link href="/css/blizter.css" rel="stylesheet" type="text/css"/> 
+-->
+<!--[if lte IE 6]>
+<link href="/css/style_ie6.css?v=2" rel="stylesheet" type="text/css">
+<link href="/javascripts/highslide-4.1.13/highslide-ie6.css?v=1" rel="stylesheet" type="text/css">
+<script src="/javascripts/jquery.reject.js?v=1" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function(),
+            display: ['firefox','opera','chrome','safari','msie'],
+            imagePath: '/images/browsers/'
+        });
+        return false;
+    });
+    </script>
+<![endif]-->
+<!--[if IE 8]>
+<link href="/css/style_ie8.css?v=2" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if lte IE 8]>
+<script src="/javascripts/html5.js?v=1" type="text/javascript"></script>
+<![endif]-->
+<!--
+
+<link href="/javascripts/highslide-4.1.13/highslide.css?v=1" rel="stylesheet" type="text/css"> 
+<script type="text/javascript" src="/javascripts/highslide-4.1.13/highslide-full.js?v=1"></script> 
+<script type="text/javascript">
+    hs.graphicsDir = '/javascripts/highslide-4.1.13/graphics/';
+    hs.wrapperClassName = 'wide-border';
+    hs.minwidth = '800px';
+    hs.minheight = '800px';
+    hs.Expander.prototype.onMouseOut = function (sender) {
+        sender.close();
+    };
+    hs.Expander.prototype.onAfterExpand = function (sender) {
+        if (!sender.mouseIsOver) sender.close();
+    };
+    function mouseOver(opener) {
+        opener.hasMouseOver = true;
+        setTimeout(function () {
+            if (opener.hasMouseOver) {
+                opener.onclick();
+                opener.hasMouseOver = false;
+            }
+        }, 10);
+    }
+    function mouseOut(opener) {
+        opener.hasMouseOver = false;
+    }
+    </script>
+
+
+<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?49"></script>
+
+<script type="text/javascript">
+
+    var root_id = "{$content.root_id}";
+    var isRightToLeft_ = true;
+
+    jQuery.noConflict();
+    jQuery(function () {
+        // new
+        jQuery(window).load(function () {
+            footH();
+            picCatTwoLevel();
+            overlayHeight();
+            fixPanel();
+            menuHover();
+            lastClass();
+            popup_rotation();
+        });
+        jQuery(window).scroll(function () {
+            fixPanel();
+        });
+        fileInput();
+        styledSelect();
+        visibilityCatalog();
+        seoOpen();
+        mapClose();
+        buttonDrop();
+        addMoreFile();
+        tabSwitch();
+        dutyinner();
+        dutyclose();
+        jQuery('.searchMain input[placeholder], .topFix .scrollBox input[placeholder]').placeholder();
+        jQuery('.slider').mobilyslider({
+            autoplay: false,
+            autoplaySpeed: 4000,
+            transition: 'fade',
+            animationSpeed: 800,
+            bullets: true,
+            arrowsHide: false
+        });
+
+        jQuery('.picCatalog .dropShadow ul, .extraProduct ul').jcarousel({
+            scroll: 1
+        });
+        trClick();
+        autosuggestForSearch();
+    });
+    function show_survey_popup(id) {
+        var mycookie = document.cookie.split('; ');
+        var flag = false;
+        for (var i = 0; i < mycookie.length; i++) {
+            if (mycookie[i].substr(0, 15) == 'site_survey_js') {
+                var ids = (mycookie[i].substr(16).split('%2C'));
+
+                for (var j = 0; j < ids.length; j++)
+                    if (ids[j] != id) flag = true
+                }
+            }
+
+            if (flag || !ids) {
+                window.open('/survey_popup/?id=' + id, '_blank', 'width=590,height=680,toolbar=0,scrollbars=1');
+            }
+        }
+</script> -->
+</head>
+<!-- класс new-year для body - включение новогидних шняшек -->
+<body onclick="closeMap(event);" class="" >
+<div id="img_cont">
+<div id="image_loading" style="display:none">Загрузка ...</div>
+<div id="image" style="display:none"><img src=""></div>
+</div>
+<div id="basket" class="basketMove" onmousedown="basket_moving=1;" onmousemove="basketMove();">
+КОРЗИНА
+</div>
+<div id="ajax_log" style="position:absolute; left:100px; top:100px; width:200px; height:100px; z-index:10000; background-color:#FFFFFF; visibility:hidden; border: solid 1px #000000;">
+AJAX LOG
+</div>
+<!--Плавающее окно акции справа -->
+
+<div class="duty alert">
+<div class="alert_layout">
+<%--<span title="закрыть" is_alert="1" class="close">закрыть</span>--%>
+    <img src="images/callMe.png" width="150px"/>
+<p class="title"><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="callMe.aspx" >Вам перезвонить?</asp:HyperLink></p>
+
+<div class="alert_text_layout">
+ <p><img src="images/callMeMini.png" width="22px"/> 
+ <span class="style2">8(495) 795-75-98</span><br/><br/>
+ <img src="images/emailMini.gif" width="22px"/>&nbsp; <a href="mailto:info@vorsinstrument.ru?subject=Заказ в магазине ВорсИнструмент">Написать письмо</a><br/><br/>
+ <br/>
+
+<b>Ждём Ваших звонков!</b></p>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="wrap">
+<noindex>
+<header class="">
+<img src="/images/ny_slogan.png" alt="" class="ny-slogan">
+<span itemscope itemtype="http://schema.org/ImageObject">
+    <a href="Default.aspx">
+    <img class="logo" src="resources/logo.PNG"
+alt='Строительное инструмент ООО «Ворсинструмент»' 
+itemprop="contentUrl"></a></span>
+<div>
+<%--<img src="images/default_head.PNG" />--%>
+</div>
+
+<img src="images/Bg_menu.png" width="680"/>
+<%--<div class="infoService">
+<div class="phones">
+<p><span>(916)</span> 902-88-55</p></div>
+<a class="button active bgBot callMeDrop" href="#">Вам перезвонить?</a>
+</div>--%>
+</header>
+<!-- Главное меню-->
+<nav id="nav" class="mainMenu">
+ 
+  <div class="ny-menu-bg"></div>
+  <table id="nav">
+    <tbody>
+      <tr>
+        <%--<td class="home">
+          <div class="item">
+            <a href="/catalog/6581" class="hover">
+              <span>Главная</span>
+            </a>
+          </div>
+        </td>--%>
+        <td>
+          <div class="item">
+            <a href="Stock.aspx" class="first hover" id="d200">Акции</a>
+          </div>
+        </td>
+        <td>
+          <div class="item">
+            <a href="Default.aspx" class="first" id="d4752">Каталог товаров</a>
+          </div>
+        </td>
+        <td>
+          <div class="item">
+            <a href="Buy.aspx" class="first" id="d3369">Применение</a>
+          </div>
+        </td>
+        <td>
+          <div class="item">
+            <a href="Contacts.aspx" class="first" id="d6517">Контакты</a>
+          </div>
+        </td>
+       <!--
+        <td>
+          <div class="item">
+            <a href="/6516" class="first" id="d6516">Доставка</a>
+          </div>
+        </td>
+        <td>
+          <div class="item">
+            <a href="/about" class="first hover" id="d2274">О компании</a>
+          </div>
+        </td>
+        <td class="dropR">
+          <div class="item">
+            <a href="/contacts" class="first hover" id="d106">Контакты</a>
+          </div>
+        </td> 
+        -->
+      </tr>
+    </tbody>
+  </table>
+  <script type="text/javascript" src="/javascripts/menu.js?v=5"></script>
+</nav>
+<!-- Главное меню конец-->
+</noindex>
+<div class="shadowBox">
+<div class="shadowInside">
+<div class="colWrap">
+<div class="colWrapInside main">
+<!-- left column -->
+<div class="leftCol">
+<noindex>
+<section class="simpleBlock sendOrderBox">
+<h2 class="simpleTitle">Пришлите заказ</h2>
+<p class="sendOrder">Отправьте Ваш заказ в <strong>любом формате</strong>: Word, Excel, PDF ...</p>
+<p class="textCenter marginNone">
+<span class="buttonShadow inline"><a class="button active bgBot loadOrderDrop" href="ZakazOnline.aspx">Пришлите заказ</a></span>
+</p>
+</section>
+<section class="simpleBlock">
+<h2 class="simpleTitle">Офисы в Москве</h2>
+<p class="officeDesc"><span class="red">Центральный офис:</span></p>
+<p>Москва, 1-км Киевского шоссе, Бизнес-центр Румянцево<br /> м. Юго-Западная</p>
+<p class="officePhone"><span>8 (495)</span> 795-75-98</p>
+<p><a class="mapsLink" onClick="showMapBox(event, 'mapBox1');"><span>Карта проезда</span></a></p>
+</section>
+<section class="simpleBlock sale">
+<h2 class="simpleTitle">Акции</h2>
+<p>При оптовой покупке на сумму от 100 000 руб вы получаете скидку 25% и карту Друга "ВорсИнструмент"</p>
+<p><img src="images/stock/2.PNG" width="200px"/></p>
+<p style="font-size: 16px"><a href="Stock.aspx"><strong>Подробнее</strong></a></p>
+</section>
+<!-- Секция "Помощь клиенту" -->
+<!--
+<section class="simpleBlock ">
+<h2 class="simpleTitle">Помощь клиенту</h2>							
+<ul class="helpList">
+<li><a href="/partners/"><strong>Клиентам и партнерам</strong></a></li>
+<li><a href="/contacts/moscow">Где купить</a></li>
+<li><a href="/partners/3368">Как купить</a></li>
+<li><a href="/archive/news/">Новости</a></li>
+<li><a href="/files/katalog_secured.pdf">Электронный каталог (36,6 МБ)</a></li>
+<li><a href="/price_list">Скачать прайс-лист</a></li>
+<li><a onclick="window.open('http://www.sms-tehno.ru/catalog','Запасные части','scrollbars=yes'); return false;" href="http://www.sms-tehno.ru/catalog">Запасные части</a></li>
+</ul>
+<p><span class="buttonShadow big"><a class="button big" onclick="get_sale_file();" href="javascript:void(0);"><span class="inside">распродажа товаров</span></a></span></p>
+</section>  
+-->                          
+</noindex>
+</div>
+<!-- /left column -->
+<!-- right column -->
+<div class="rightCol">
+
+
+<%--<form action="poisk_instrumenta.aspx" method="get" id="searchFrm" class="searchMain" name="search">
+<a class="btn" href="javascript:document.getElementById('searchFrm').submit();" title="Искать">Искать</a>
+<input class="catSearch" id="catSearch_main" name="search" type="text" value="Поиск инструмента (более 10 000 позиций)" onblur="javascript:if(this.value==''){this.value='Поиск инструмента (более 10 000 позиций)'};" onfocus="if(this.value=='Поиск инструмента (более 10 000 позиций)') {this.value='';}" autocomplete="off">
+<input class="hiddenBtn" name="" type="submit">
+<!--<a href="/advanced_search">Расширенный поиск</a>-->
+<div class="autocomplete" id="autosuggestResults_main"></div>
+</form>--%>
+<%----------ЯНДЕКС ПОИСК НАЧАЛО----------%>
+
+<div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'search.aspx','arrow':false,'bg':'transparent','fontsize':12,'fg':'#000000','language':'ru','logo':'rb','publicname':'Поиск vorsinstrument','suggest':false,'target':'_blank','tld':'ru','type':3,'usebigdictionary':true,'searchid':2222204,'webopt':false,'websearch':false,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':'Поиск инструмента','input_placeholderColor':'#000000','input_borderColor':'#ff0000'}">
+         <form action="http://yandex.ru/sitesearch" method="get" target="_blank">
+            <input type="hidden" name="searchid" value="2222204"/>
+            <input type="hidden" name="l10n" value="ru"/>
+            <input type="hidden" name="reqenc" value=""/>
+            <input type="search" name="text" value=""/>
+            <input type="submit" value="Найти"/>
+          </form>
+</div>
+  <style type="text/css">
+      .ya-page_js_yes .ya-site-form_inited_no { display: none; }
+  </style>
+  <script type="text/javascript">
+      (function (w, d, c) { var s = d.createElement('script'), h = d.getElementsByTagName('script')[0], e = d.documentElement; if ((' ' + e.className + ' ').indexOf(' ya-page_js_yes ') === -1) { e.className += ' ya-page_js_yes'; } s.type = 'text/javascript'; s.async = true; s.charset = 'utf-8'; s.src = (d.location.protocol === 'https:' ? 'https:' : 'http:') + '//site.yandex.net/v2.0/js/all.js'; h.parentNode.insertBefore(s, h); (w[c] || (w[c] = [])).push(function () { Ya.Site.Form.init() }) })(window, document, 'yandex_site_callbacks');
+  </script>     
+
+<%----------ЯНДЕКС ПОИСК КОНЕЦ----------%>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div id="CPMTicker" style="position:relative; width:100%; overflow:hidden; left:0; display:block;"><span id="news" style="position:relative;white-space:nowrap; visibility:hidden; width:100%; display:block;"><a href="/catalog/02/025/0253">Супер акция!!! Скидки 35% на текстильные стропы!&nbsp;&gt;&gt;</a></span></div>-->
+<!--<marquee bgcolor="#fff" direction="left" behavior="scroll" scrollamount="7">
+</marquee>-->
+<!--<ul id="ticker01"><li></li></ul>-->
+<!--<img src="/images/text.gif" alt=""><br><br>-->
+<!--Каталог разделов-->
+<form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+<!--Конец каталога разделов--> 
+<!-- нет описания слева -->
+<hr>                            
+</div>
+<!-- /right column -->
+</div>
+</div>
+</div>
+</div>
+<!--Большой раскрывающийся каталог товаров -->
+<!--
+<div class="simpleShadow">
+<h1 class="catTitle">Каталог товаров <a class="visibilityCat" href="#">Развернуть</a></h1>
+<div class="hiddenBlock">
+
+<ul class="textCatalog category">
+<li class="left">
+<p>
+<span itemscope itemtype="http://schema.org/ImageObject"><img src="/images/new.gif" alt="RenzA" itemprop="contentUrl"></span>&nbsp;                <a href="/catalog/6581">Акции&nbsp;<span class="qty">(64)</span></a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/6581" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/6581/RENZA-logo3_52.jpg" alt="RenzA" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/6581/6665">Алмазный инструмент&nbsp;<span class="qty">(15)</span></a>
+</li>
+<li>
+<a href="/catalog/6581/6583">Домкраты гидравлические бутылочные&nbsp;<span class="qty">(12)</span></a>
+</li>
+<li>
+<a href="/catalog/6581/6586">Отбойные молотки&nbsp;<span class="qty">(10)</span></a>
+</li>
+<li>
+<a href="/catalog/6581/6582">Ручные гидравлические трубогибы&nbsp;<span class="qty">(4)</span></a>
+</li>
+<li>
+<a href="/catalog/6581/6584">Ручные цепные тали&nbsp;<span class="qty">(19)</span></a>
+</li>
+<li>
+<a href="/catalog/6581/6661">Тачки строительные&nbsp;<span class="qty">(1)</span></a>
+</li>
+<li>
+<a href="/catalog/6581/6669">Тепловое оборудование&nbsp;<span class="qty">(3)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="right">
+<p>
+<span itemscope itemtype="http://schema.org/ImageObject"><img src="/images/new.gif" alt="Газосварочное оборудование" itemprop="contentUrl"></span>&nbsp;                <a href="/catalog/062">
+Газосварочное оборудование&nbsp;<span class="qty">(133)</span>
+</a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/062" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_gas.png" alt="Газосварочное оборудование" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/062/0630">Газорезательные машины&nbsp;<span class="qty">(4)</span></a>
+</li>
+<li>
+<a href="/catalog/062/0628">Газосварочные комплекты&nbsp;<span class="qty">(9)</span></a>
+</li>
+<li>
+<a href="/catalog/062/0622">Горелки кровельные&nbsp;<span class="qty">(8)</span></a>
+</li>
+<li>
+<a href="/catalog/062/0621">Горелки сварочные&nbsp;<span class="qty">(10)</span></a>
+</li>
+<li>
+<a href="/catalog/062/0626">Редукторы, регуляторы расхода&nbsp;<span class="qty">(30)</span></a>
+</li>
+<li>
+<a href="/catalog/062/0623">Резаки газо-кислородные&nbsp;<span class="qty">(20)</span></a>
+</li>
+<li>
+<a href="/catalog/062/065">Рукав для газосварочных работ&nbsp;<span class="qty">(15)</span></a>
+</li>
+<li>
+<a href="/catalog/062/0627">Комплектующие к газосварочному оборудованию&nbsp;<span class="qty">(18)</span></a>
+</li>
+<li>
+<a href="/catalog/062/0624">Газовые баллоны , генераторы ацетиленовые и тележки для баллонов&nbsp;<span class="qty">(19)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="cl"></li>			<li class="left">
+<p>
+<a href="/catalog/18">Геодезическое оборудование и средства связи&nbsp;<span class="qty">(173)</span></a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/18" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_geodez.png" alt="Геодезическое оборудование и средства связи" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/18/183">Оснастка&nbsp;<span class="qty">(13)</span></a>
+</li>
+<li>
+<a href="/catalog/18/1813">Тахеометры&nbsp;<span class="qty">(32)</span></a>
+</li>
+<li>
+<a href="/catalog/18/1812">Нивелиры&nbsp;<span class="qty">(43)</span></a>
+</li>
+<li>
+<a href="/catalog/18/1811">Теодолиты&nbsp;<span class="qty">(18)</span></a>
+</li>
+<li>
+<a href="/catalog/18/182">Лазерные приборы&nbsp;<span class="qty">(58)</span></a>
+</li>
+<li>
+<a href="/catalog/18/184">Приборы неразрушающего контроля&nbsp;<span class="qty">(9)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="right">
+<p>
+<a href="/catalog/05">
+Гидравлическое оборудование&nbsp;<span class="qty">(97)</span>
+</a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/05" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_gidrav.png" alt="Гидравлическое оборудование" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/05/9999003443">Гидравлическое оборудование HYCON&nbsp;<span class="qty">(61)</span></a>
+</li>
+<li>
+<a href="/catalog/05/9999003444">Гидравлическое оборудование ATLAS COPCO&nbsp;<span class="qty">(36)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="cl"></li>			<li class="left">
+<p>
+<a href="/catalog/02">Грузоподъёмное оборудование&nbsp;<span class="qty">(733)</span></a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/02" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_gruzopodem.png" alt="Грузоподъёмное оборудование" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/02/8184">Веревки промышленного назначения&nbsp;<span class="qty">(39)</span></a>
+</li>
+<li>
+<a href="/catalog/02/021">Грузоподъемное оборудование для стройки&nbsp;<span class="qty">(83)</span></a>
+</li>
+<li>
+<a href="/catalog/02/027">Динамометры&nbsp;<span class="qty">(13)</span></a>
+</li>
+<li>
+<a href="/catalog/02/023">Домкраты&nbsp;<span class="qty">(52)</span></a>
+</li>
+<li>
+<a href="/catalog/02/022">Лебедки&nbsp;<span class="qty">(128)</span></a>
+</li>
+<li>
+<a href="/catalog/02/026">Монтажная оснастка, захваты, такелаж&nbsp;<span class="qty">(77)</span></a>
+</li>
+<li>
+<a href="/catalog/02/4185">Подъемно-транспортная техника&nbsp;<span class="qty">(49)</span></a>
+</li>
+<li>
+<a href="/catalog/02/025">Стропы, канаты, тросы&nbsp;<span class="qty">(34)</span></a>
+</li>
+<li>
+<a href="/catalog/02/024">Тали, блоки, полиспасты&nbsp;<span class="qty">(258)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="right">
+<p>
+<a href="/catalog/104">
+Дорожная техника&nbsp;<span class="qty">(208)</span>
+</a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/104" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_road.png" alt="Дорожная техника" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/104/1042">Виброплиты бензиновые&nbsp;<span class="qty">(110)</span></a>
+</li>
+<li>
+<a href="/catalog/104/1041">Виброплиты электрические&nbsp;<span class="qty">(12)</span></a>
+</li>
+<li>
+<a href="/catalog/104/1043">Вибротрамбовки&nbsp;<span class="qty">(20)</span></a>
+</li>
+<li>
+<a href="/catalog/104/9999007915">Виброкатки&nbsp;<span class="qty">(7)</span></a>
+</li>
+<li>
+<a href="/catalog/104/1045">Резчики швов бензиновые&nbsp;<span class="qty">(23)</span></a>
+</li>
+<li>
+<a href="/catalog/104/1044">Резчики швов электрические&nbsp;<span class="qty">(5)</span></a>
+</li>
+<li>
+<a href="/catalog/104/4423">Отрезные круги для резчиков швов&nbsp;<span class="qty">(19)</span></a>
+</li>
+<li>
+<a href="/catalog/104/9999000867">Дорожные ограждения&nbsp;<span class="qty">(12)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="cl"></li>			<li class="left">
+<p>
+<a href="/catalog/08">Кабель, провод&nbsp;<span class="qty">(227)</span></a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/08" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_kabel.png" alt="Кабель, провод" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/08/083">Инструмент для опресcовки и разделки кабеля&nbsp;<span class="qty">(41)</span></a>
+</li>
+<li>
+<a href="/catalog/08/081">Кабель&nbsp;<span class="qty">(148)</span></a>
+</li>
+<li>
+<a href="/catalog/08/9999006331">Контрольно-измерительные приборы&nbsp;<span class="qty">(3)</span></a>
+</li>
+<li>
+<a href="/catalog/08/082">Провод&nbsp;<span class="qty">(35)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="right">
+<p>
+<a href="/catalog/041">
+Компрессоры&nbsp;<span class="qty">(636)</span>
+</a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/041" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_kompressor.png" alt="Компрессоры" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/041/0411">Поршневые электрические АВАС и FUBAG&nbsp;<span class="qty">(68)</span></a>
+</li>
+<li>
+<a href="/catalog/041/0412">Поршневые электрические передвижные (Россия)&nbsp;<span class="qty">(20)</span></a>
+</li>
+<li>
+<a href="/catalog/041/0413">Поршневые электрические стационарные (Россия)&nbsp;<span class="qty">(21)</span></a>
+</li>
+<li>
+<a href="/catalog/041/0415">Винтовые дизельные&nbsp;<span class="qty">(127)</span></a>
+</li>
+<li>
+<a href="/catalog/041/0416">Поршневые дизельные&nbsp;<span class="qty">(7)</span></a>
+</li>
+<li>
+<a href="/catalog/041/0414">Винтовые электрические&nbsp;<span class="qty">(211)</span></a>
+</li>
+<li>
+<a href="/catalog/041/042">Осушители воздуха и фильтры&nbsp;<span class="qty">(151)</span></a>
+</li>
+<li>
+<a href="/catalog/041/0418">Комплектующие к компрессорам&nbsp;<span class="qty">(31)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="cl"></li>			<li class="left">
+<p>
+<a href="/catalog/9999007221">Крепёж инженерных систем&nbsp;<span class="qty">(75)</span></a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/9999007221" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_krepej.png" alt="Крепёж инженерных систем" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+</li>
+<li class="right">
+<p>
+<a href="/catalog/03">
+Леса, вышки-туры, сетка, мусороспуски&nbsp;<span class="qty">(216)</span>
+</a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/03" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_lesa.png" alt="Леса, вышки-туры, сетка, мусороспуски" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/03/033">Вышки-туры&nbsp;<span class="qty">(150)</span></a>
+</li>
+<li>
+<a href="/catalog/03/9999000879">ЗУС и комплектующие&nbsp;<span class="qty">(11)</span></a>
+</li>
+<li>
+<a href="/catalog/03/031">Леса строительные&nbsp;<span class="qty">(9)</span></a>
+</li>
+<li>
+<a href="/catalog/03/0371">Мусороспуски&nbsp;<span class="qty">(8)</span></a>
+</li>
+<li>
+<a href="/catalog/03/8018">Подмости&nbsp;<span class="qty">(1)</span></a>
+</li>
+<li>
+<a href="/catalog/03/032">Помосты строительные&nbsp;<span class="qty">(6)</span></a>
+</li>
+<li>
+<a href="/catalog/03/036">Сетка, пленка, тент&nbsp;<span class="qty">(31)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="cl"></li>			<li class="left">
+<p>
+<a href="/catalog/035">Лестницы, стремянки&nbsp;<span class="qty">(63)</span></a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/035" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_stremyanki.png" alt="Лестницы, стремянки" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/035/0351">Лестницы универсальные&nbsp;<span class="qty">(42)</span></a>
+</li>
+<li>
+<a href="/catalog/035/034">Стремянки&nbsp;<span class="qty">(21)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="right">
+<p>
+<a href="/catalog/078">
+Машины для отделки полов&nbsp;<span class="qty">(147)</span>
+</a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/078" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_poly.png" alt="Машины для отделки полов" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/078/0783">Комплектующие к машинам  для отделки полов&nbsp;<span class="qty">(78)</span></a>
+</li>
+<li>
+<a href="/catalog/078/0782">Машины для отделки Бетонных полов&nbsp;<span class="qty">(63)</span></a>
+</li>
+<li>
+<a href="/catalog/078/0781">Машины для отделки Деревянных полов&nbsp;<span class="qty">(6)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="cl"></li>			<li class="left">
+<p>
+<a href="/catalog/12">Моечное оборудование&nbsp;<span class="qty">(15)</span></a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/12" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_moyka.png" alt="Моечное оборудование" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/12/1211">Моечные установки&nbsp;<span class="qty">(2)</span></a>
+</li>
+<li>
+<a href="/catalog/12/1212">Мойки высокого давления бытовые&nbsp;<span class="qty">(6)</span></a>
+</li>
+<li>
+<a href="/catalog/12/1214">Мойки высокого давления профессиональные&nbsp;<span class="qty">(7)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="right">
+<p>
+<a href="/catalog/11">
+Насосное оборудование&nbsp;<span class="qty">(281)</span>
+</a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/11" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_nasos.png" alt="Насосное оборудование" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/11/112">Мотопомпы&nbsp;<span class="qty">(49)</span></a>
+</li>
+<li>
+<a href="/catalog/11/111">Насосы&nbsp;<span class="qty">(85)</span></a>
+</li>
+<li>
+<br>                        <span itemscope itemtype="http://schema.org/ImageObject"><img src="/images/new.gif" alt="Насосы для ГСМ" itemprop="contentUrl"></span>&nbsp;
+<a href="/catalog/11/9999009069">Насосы для ГСМ&nbsp;<span class="qty">(33)</span></a>
+</li>
+<li>
+<a href="/catalog/11/114">Рукава и шланги для воды&nbsp;<span class="qty">(99)</span></a>
+</li>
+<li>
+<a href="/catalog/11/113">Станции водоснабжения и оснастка&nbsp;<span class="qty">(15)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="cl"></li>			<li class="left">
+<p>
+<a href="/catalog/103">Оборудование для кровельных и герметизационных работ&nbsp;<span class="qty">(23)</span></a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/103" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_krovlya.png" alt="Оборудование для кровельных и герметизационных работ" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/103/1031">Котлы битумоварочные&nbsp;<span class="qty">(4)</span></a>
+</li>
+<li>
+<a href="/catalog/103/1033">Кровельные машины&nbsp;<span class="qty">(9)</span></a>
+</li>
+<li>
+<a href="/catalog/103/1032">Нарезчики кровли&nbsp;<span class="qty">(10)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="right">
+<p>
+<a href="/catalog/15">
+Оборудование для монтажа и обслуживания труб&nbsp;<span class="qty">(155)</span>
+</a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/15" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_montaj_trub.png" alt="Оборудование для монтажа и обслуживания труб" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/15/9999002074">Оборудование для медных труб&nbsp;<span class="qty">(5)</span></a>
+</li>
+<li>
+<a href="/catalog/15/151">Оборудование для металлических труб&nbsp;<span class="qty">(99)</span></a>
+</li>
+<li>
+<a href="/catalog/15/9999002075">Оборудование для металлопластиковых  труб&nbsp;<span class="qty">(2)</span></a>
+</li>
+<li>
+<a href="/catalog/15/153">Оборудование для обслуживания труб&nbsp;<span class="qty">(34)</span></a>
+</li>
+<li>
+<a href="/catalog/15/152">Оборудование для пластиковых труб&nbsp;<span class="qty">(15)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="cl"></li>			<li class="left">
+<p>
+<a href="/catalog/20">Оборудование для обустройства стройплощадок и хозинвентарь&nbsp;<span class="qty">(293)</span></a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/20" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_stroiplosadki.png" alt="Оборудование для обустройства стройплощадок и хозинвентарь" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/20/201">Бытовки, блоки, контейнеры строительные&nbsp;<span class="qty">(19)</span></a>
+</li>
+<li>
+<a href="/catalog/20/2034">Металлическая мебель&nbsp;<span class="qty">(84)</span></a>
+</li>
+<li>
+<a href="/catalog/20/2035">Мобильные туалеты и емкости для жидкости&nbsp;<span class="qty">(5)</span></a>
+</li>
+<li>
+<a href="/catalog/20/9999007160">Пленка техническая, стрейч пленка&nbsp;<span class="qty">(9)</span></a>
+</li>
+<li>
+<a href="/catalog/20/2031">Пожарное оборудование и оснастка&nbsp;<span class="qty">(83)</span></a>
+</li>
+<li>
+<br>                        <span itemscope itemtype="http://schema.org/ImageObject"><img src="/images/new.gif" alt="Стойки и стеллажи" itemprop="contentUrl"></span>&nbsp;
+<a href="/catalog/20/9999007229">Стойки и стеллажи&nbsp;<span class="qty">(11)</span></a>
+</li>
+<li>
+<a href="/catalog/20/202">Хозтовары&nbsp;<span class="qty">(80)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="right">
+<p>
+<a href="/catalog/01">
+Оборудование для работы с бетоном-раствором&nbsp;<span class="qty">(694)</span>
+</a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/01" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_beton.png" alt="Оборудование для работы с бетоном-раствором" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/01/014">Виброоборудование&nbsp;<span class="qty">(318)</span></a>
+</li>
+<li>
+<a href="/catalog/01/012">Для приготовления бетона-раствора&nbsp;<span class="qty">(79)</span></a>
+</li>
+<li>
+<a href="/catalog/01/017">Для изготовления изделий из бетона-раствора&nbsp;<span class="qty">(44)</span></a>
+</li>
+<li>
+<br>                        <span itemscope itemtype="http://schema.org/ImageObject"><img src="/images/new.gif" alt="Лабораторное оборудование" itemprop="contentUrl"></span>&nbsp;
+<a href="/catalog/01/9999004822">Лабораторное оборудование&nbsp;<span class="qty">(4)</span></a>
+</li>
+<li>
+<a href="/catalog/01/016">Опалубка&nbsp;<span class="qty">(102)</span></a>
+</li>
+<li>
+<a href="/catalog/01/011">Для приема-подачи раствора, бетона, пенобетона&nbsp;<span class="qty">(147)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="cl"></li>			<li class="left">
+<p>
+<a href="/catalog/9999007761">Оборудование неразрушающего контроля&nbsp;<span class="qty">(23)</span></a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/9999007761" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_catalog_icons_dev_last.png" alt="Оборудование неразрушающего контроля" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/9999007761/9999008023">Измерители прочности бетона, влагомеры&nbsp;<span class="qty">(7)</span></a>
+</li>
+<li>
+<a href="/catalog/9999007761/9999008022">Пирометры&nbsp;<span class="qty">(9)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="right">
+<p>
+<a href="/catalog/102">
+Окрасочное оборудование&nbsp;<span class="qty">(160)</span>
+</a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/102" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_okraska.png" alt="Окрасочное оборудование" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/102/1028">Агрегаты высокого давления АВД&nbsp;<span class="qty">(66)</span></a>
+</li>
+<li>
+<a href="/catalog/102/1026">Установки малярные и шпаклевочные&nbsp;<span class="qty">(8)</span></a>
+</li>
+<li>
+<a href="/catalog/102/1024">Краскораспылители пневматические&nbsp;<span class="qty">(34)</span></a>
+</li>
+<li>
+<a href="/catalog/102/1025">Краскопульты ручные и электрические&nbsp;<span class="qty">(14)</span></a>
+</li>
+<li>
+<a href="/catalog/102/1029">Комплектующие к АВД&nbsp;<span class="qty">(21)</span></a>
+</li>
+<li>
+<a href="/catalog/102/4227">Комплектующие к АВД CONTRACOR&nbsp;<span class="qty">(17)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="cl"></li>			<li class="left">
+<p>
+<a href="/catalog/085">Осветительное оборудование&nbsp;<span class="qty">(23)</span></a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/085" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_svet.png" alt="Осветительное оборудование" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/085/0853">Лампы&nbsp;<span class="qty">(13)</span></a>
+</li>
+<li>
+<a href="/catalog/085/0854">Патроны и пуско-регулирующая аппаратура&nbsp;<span class="qty">(2)</span></a>
+</li>
+<li>
+<a href="/catalog/085/0851">Прожектора&nbsp;<span class="qty">(4)</span></a>
+</li>
+<li>
+<a href="/catalog/085/0852">Светильники&nbsp;<span class="qty">(4)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="right">
+<p>
+<a href="/catalog/10">
+Пескоструйное оборудование&nbsp;<span class="qty">(144)</span>
+</a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/10" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_pesok.png" alt="Пескоструйное оборудование" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/10/1011">Пескоструйные агрегаты (Россия)&nbsp;<span class="qty">(11)</span></a>
+</li>
+<li>
+<a href="/catalog/10/1014">Пескоструйные агрегаты (Германия)&nbsp;<span class="qty">(6)</span></a>
+</li>
+<li>
+<a href="/catalog/10/1013">Пескоструйные камеры (Россия)&nbsp;<span class="qty">(20)</span></a>
+</li>
+<li>
+<a href="/catalog/10/1012">Пескоструйные сопла (Россия)&nbsp;<span class="qty">(20)</span></a>
+</li>
+<li>
+<a href="/catalog/10/1015">Абразивоструйные сопла (Германия)&nbsp;<span class="qty">(28)</span></a>
+</li>
+<li>
+<a href="/catalog/10/1017">Спецодежда для пескоструйных работ&nbsp;<span class="qty">(21)</span></a>
+</li>
+<li>
+<a href="/catalog/10/1016">Комплектующие к пескоструйному оборудованию&nbsp;<span class="qty">(38)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="cl"></li>			<li class="left">
+<p>
+<a href="/catalog/04">Пневматическое оборудование&nbsp;<span class="qty">(256)</span></a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/04" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_pnevmo.png" alt="Пневматическое оборудование" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/04/0432">Отбойные молотки&nbsp;<span class="qty">(97)</span></a>
+</li>
+<li>
+<a href="/catalog/04/0438">Пистолеты монтажные&nbsp;<span class="qty">(15)</span></a>
+</li>
+<li>
+<a href="/catalog/04/7522">Рукава пневматические&nbsp;<span class="qty">(39)</span></a>
+</li>
+<li>
+<a href="/catalog/04/0435">Пневмогайковерты&nbsp;<span class="qty">(20)</span></a>
+</li>
+<li>
+<a href="/catalog/04/0437">Шлифовальные машины&nbsp;<span class="qty">(22)</span></a>
+</li>
+<li>
+<a href="/catalog/04/0436">Пневмодрели&nbsp;<span class="qty">(5)</span></a>
+</li>
+<li>
+<a href="/catalog/04/0431">Пневмоперфораторы&nbsp;<span class="qty">(25)</span></a>
+</li>
+<li>
+<a href="/catalog/04/0433">Пневмопробойники&nbsp;<span class="qty">(9)</span></a>
+</li>
+<li>
+<a href="/catalog/04/0439">Прочий инструмент&nbsp;<span class="qty">(24)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="right">
+<p>
+<a href="/catalog/17">
+Ручной строительный инструмент&nbsp;<span class="qty">(673)</span>
+</a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/17" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_instrument.png" alt="Ручной строительный инструмент" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/17/9999002327">Профессиональный инструмент&nbsp;<span class="qty">(107)</span></a>
+</li>
+<li>
+<a href="/catalog/17/9127">Ручной инструмент&nbsp;<span class="qty">(514)</span></a>
+</li>
+<li>
+<a href="/catalog/17/9999007095">Тиски слесарные&nbsp;<span class="qty">(40)</span></a>
+</li>
+<li>
+<a href="/catalog/17/9999007139">Тиски станочные производства Глазовский завод "МЕТАЛЛИСТ"&nbsp;<span class="qty">(12)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="cl"></li>			<li class="left">
+<p>
+<a href="/catalog/21">Садово-парковая техника&nbsp;<span class="qty">(92)</span></a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/21" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_sad.png" alt="Садово-парковая техника" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/21/213">Бензопилы&nbsp;<span class="qty">(17)</span></a>
+</li>
+<li>
+<a href="/catalog/21/214">Газонокосилки&nbsp;<span class="qty">(15)</span></a>
+</li>
+<li>
+<a href="/catalog/21/215">Тачки&nbsp;<span class="qty">(20)</span></a>
+</li>
+<li>
+<a href="/catalog/21/212">Техника для обработки земли&nbsp;<span class="qty">(5)</span></a>
+</li>
+<li>
+<a href="/catalog/21/211">Техника для уборки снега&nbsp;<span class="qty">(20)</span></a>
+</li>
+<li>
+<a href="/catalog/21/9999002468">Мотобуры ручные&nbsp;<span class="qty">(15)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="right">
+<p>
+<a href="/catalog/06">
+Сварочное оборудование и материалы&nbsp;<span class="qty">(212)</span>
+</a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/06" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_svarka.png" alt="Сварочное оборудование и материалы" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/06/064">Комплектующие для электросварочного оборудования&nbsp;<span class="qty">(26)</span></a>
+</li>
+<li>
+<a href="/catalog/06/063">Сварочные материалы&nbsp;<span class="qty">(31)</span></a>
+</li>
+<li>
+<a href="/catalog/06/061">Электросварочное оборудование&nbsp;<span class="qty">(143)</span></a>
+</li>
+<li>
+<a href="/catalog/06/0619">Зарядные и пуско-зарядные устройства&nbsp;<span class="qty">(12)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="cl"></li>			<li class="left">
+<p>
+<a href="/catalog/19">Спецодежда и средства защиты&nbsp;<span class="qty">(180)</span></a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/19" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_specodejda.png" alt="Спецодежда и средства защиты" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/19/8759">Безопасность рабочего места&nbsp;<span class="qty">(4)</span></a>
+</li>
+<li>
+<a href="/catalog/19/8752">Головные уборы&nbsp;<span class="qty">(2)</span></a>
+</li>
+<li>
+<a href="/catalog/19/9999000387">Маски для сварочных работ&nbsp;<span class="qty">(8)</span></a>
+</li>
+<li>
+<a href="/catalog/19/8749">Одежда для защиты от воды и растворов нетоксичных веществ&nbsp;<span class="qty">(1)</span></a>
+</li>
+<li>
+<a href="/catalog/19/1923">Одежда для защиты от повышенных температур&nbsp;<span class="qty">(21)</span></a>
+</li>
+<li>
+<a href="/catalog/19/1921">Одежда защитная зимняя&nbsp;<span class="qty">(26)</span></a>
+</li>
+<li>
+<a href="/catalog/19/1922">Одежда защитная летняя&nbsp;<span class="qty">(16)</span></a>
+</li>
+<li>
+<a href="/catalog/19/8750">Одежда сигнальная&nbsp;<span class="qty">(4)</span></a>
+</li>
+<li>
+<a href="/catalog/19/8754">Рабочая обувь&nbsp;<span class="qty">(24)</span></a>
+</li>
+<li>
+<a href="/catalog/19/8753">Рукавицы и перчатки&nbsp;<span class="qty">(28)</span></a>
+</li>
+<li>
+<a href="/catalog/19/8755">Средства защиты головы, лица и глаз&nbsp;<span class="qty">(19)</span></a>
+</li>
+<li>
+<a href="/catalog/19/8757">Средства защиты органов дыхания&nbsp;<span class="qty">(4)</span></a>
+</li>
+<li>
+<a href="/catalog/19/8756">Средства защиты органов слуха&nbsp;<span class="qty">(1)</span></a>
+</li>
+<li>
+<a href="/catalog/19/8758">Средства защиты от падения с высоты&nbsp;<span class="qty">(22)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="right">
+<p>
+<a href="/catalog/16">
+Станки и плиткорезы&nbsp;<span class="qty">(314)</span>
+</a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/16" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_stanki.png" alt="Станки и плиткорезы" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/16/9999003843">Алмазное бурение&nbsp;<span class="qty">(70)</span></a>
+</li>
+<li>
+<a href="/catalog/16/5909">Камнерезные станки, плиткорезы&nbsp;<span class="qty">(80)</span></a>
+</li>
+<li>
+<a href="/catalog/16/162">Станки для работы с деревом&nbsp;<span class="qty">(11)</span></a>
+</li>
+<li>
+<a href="/catalog/16/9999002920">Станки для работы с листовым металлом&nbsp;<span class="qty">(35)</span></a>
+</li>
+<li>
+<a href="/catalog/16/161">Станки для работы с металлом&nbsp;<span class="qty">(109)</span></a>
+</li>
+<li>
+<a href="/catalog/16/9999009117">Стенорезные установки&nbsp;<span class="qty">(9)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="cl"></li>			<li class="left">
+<p>
+<a href="/catalog/22">Стройматериалы&nbsp;<span class="qty">(133)</span></a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/22" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_stroimaterial.png" alt="Стройматериалы" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/22/221">Гвозди, пена, герметик, скотч малярный&nbsp;<span class="qty">(34)</span></a>
+</li>
+<li>
+<a href="/catalog/22/9770">Метизы&nbsp;<span class="qty">(14)</span></a>
+</li>
+<li>
+<a href="/catalog/22/9999006952">Продукция фирмы KNAUF/КНАУФ&nbsp;<span class="qty">(16)</span></a>
+</li>
+<li>
+<br>                        <span itemscope itemtype="http://schema.org/ImageObject"><img src="/images/new.gif" alt="Сухие смеси" itemprop="contentUrl"></span>&nbsp;
+<a href="/catalog/22/9999006769">Сухие смеси&nbsp;<span class="qty">(69)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="right">
+<p>
+<a href="/catalog/14">
+Тепловое и климатическое оборудование&nbsp;<span class="qty">(298)</span>
+</a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/14" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_teplo.png" alt="Тепловое и климатическое оборудование" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/14/147">Водонагреватели&nbsp;<span class="qty">(14)</span></a>
+</li>
+<li>
+<a href="/catalog/14/143">Котлы отопительные&nbsp;<span class="qty">(4)</span></a>
+</li>
+<li>
+<a href="/catalog/14/142">Нагреватели&nbsp;<span class="qty">(67)</span></a>
+</li>
+<li>
+<a href="/catalog/14/146">Парогенераторы&nbsp;<span class="qty">(75)</span></a>
+</li>
+<li>
+<a href="/catalog/14/144">Радиаторы&nbsp;<span class="qty">(58)</span></a>
+</li>
+<li>
+<a href="/catalog/14/141">Тепловентиляторы&nbsp;<span class="qty">(67)</span></a>
+</li>
+<li>
+<a href="/catalog/14/145">Тепловые завесы&nbsp;<span class="qty">(13)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="cl"></li>			<li class="left">
+<p>
+<a href="/catalog/07">Электроинструмент и оснастка&nbsp;<span class="qty">(1199)</span></a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/07" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_elektroinstrument.png" alt="Электроинструмент и оснастка" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/07/072">Гайковерты&nbsp;<span class="qty">(15)</span></a>
+</li>
+<li>
+<a href="/catalog/07/071">Дрели&nbsp;<span class="qty">(104)</span></a>
+</li>
+<li>
+<a href="/catalog/07/077">Оснастка для электроинструмента&nbsp;<span class="qty">(742)</span></a>
+</li>
+<li>
+<a href="/catalog/07/073">Перфораторы и отбойные молотки&nbsp;<span class="qty">(84)</span></a>
+</li>
+<li>
+<a href="/catalog/07/074">Шлифовальные машины&nbsp;<span class="qty">(116)</span></a>
+</li>
+<li>
+<a href="/catalog/07/075">Электроинструмент специального назначения&nbsp;<span class="qty">(73)</span></a>
+</li>
+<li>
+<a href="/catalog/07/076">Электропилы&nbsp;<span class="qty">(65)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="right">
+<p>
+<a href="/catalog/09">
+Электростанции, электродвигатели, трансформаторы&nbsp;<span class="qty">(311)</span>
+</a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/09" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_transformator.png" alt="Электростанции, электродвигатели, трансформаторы" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/09/095">Стабилизаторы напряжения&nbsp;<span class="qty">(18)</span></a>
+</li>
+<li>
+<a href="/catalog/09/093">Трансформаторы&nbsp;<span class="qty">(48)</span></a>
+</li>
+<li>
+<a href="/catalog/09/092">Электродвигатели асинхронные&nbsp;<span class="qty">(106)</span></a>
+</li>
+<li>
+<a href="/catalog/09/091">Электростанции&nbsp;<span class="qty">(139)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="cl"></li>			<li class="left">
+<p>
+<a href="/catalog/084">Электротехническое оборудование&nbsp;<span class="qty">(126)</span></a>
+</p>
+<span class="catPic hoverCatPic">
+<a href="/catalog/084" itemscope itemtype="http://schema.org/ImageObject"><img src="/files/main_catalog_pic/pic_cat_electrotech.png" alt="Электротехническое оборудование" itemprop="contentUrl"></a>
+</span>
+<div class="notice"></div>
+<ul>
+<li>
+<a href="/catalog/084/0843">Автоматические выключатели&nbsp;<span class="qty">(22)</span></a>
+</li>
+<li>
+<a href="/catalog/084/0845">Гофротруба, металлорукав, кабельные каналы&nbsp;<span class="qty">(5)</span></a>
+</li>
+<li>
+<a href="/catalog/084/0841">Кабельные наконечники&nbsp;<span class="qty">(12)</span></a>
+</li>
+<li>
+<a href="/catalog/084/9999004934">Плиты электро и газовые&nbsp;<span class="qty">(7)</span></a>
+</li>
+<li>
+<a href="/catalog/084/0849">Пускатели&nbsp;<span class="qty">(2)</span></a>
+</li>
+<li>
+<a href="/catalog/084/0844">Устройства защитного отключения УЗО&nbsp;<span class="qty">(8)</span></a>
+</li>
+<li>
+<a href="/catalog/084/0842">Штепсельные разъёмы&nbsp;<span class="qty">(18)</span></a>
+</li>
+<li>
+<a href="/catalog/084/0846">Электроизделия, розетки, вилки, выключатели&nbsp;<span class="qty">(14)</span></a>
+</li>
+<li>
+<a href="/catalog/084/0847">Ящики силовые с рубильниками&nbsp;<span class="qty">(5)</span></a>
+</li>
+<li>
+<a href="/catalog/084/9999009709">Удлинители&nbsp;<span class="qty">(16)</span></a>
+</li>
+<li>
+<a href="/catalog/084/0826">Электроудлинители&nbsp;<span class="qty">(17)</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="right">
+</li>
+<li class="cl"></li>		</ul>       
+<p class="marginNone"><a class="visibilityCat" href="#">Свернуть</a></p>     
+</div>
+</div>
+-->
+<div class="clearFooter"></div>
+</div>
+
+<footer>
+<div class="footInside">
+<!-- slider -->
+<!-- /slider -->
+<div class="seoBlock">
+<div style="text-align:center;"><h2>Строительный инструмент более 10 000 наименований</h2></div>
+<p class="cnt" align="left" style="text-indent:1em;"><font color="#000000"><font size="2">Компания ООО “Ворсино Инструмент” – 10 лет на Российском рынке профессионального ручного инструмента, является представителем крупнейших заводов Европы:</font></font></p>
+<p class="cnt" align="left"><font color="#000000" size="2"><strong>RennBohr</strong> - Буры с высоким ресурсом – до 1000 отверстий в бетоне, ударные сверла по бетону, сверла по металлу с заточкой 124 градусов – сверление без накернивания, сверла по стеклу и керамической плитке . Буры пр-ва Франции (завод DIAGER)</font></p>
+<p class="cnt" align="left"><font color="#000000" size="2"><strong>GERT</strong> – Качественные наконечники-биты, изготовленные метом фрезеровки из кованный заготовок , после закалки охлаждены азотом. Пр-во Германия</font></p>
+<p class="cnt" align="left"><font color="#000000" size="2"><strong>MPS</strong> – Профессиональные пилки и сабельные полотна для электроинструмента, коронки Би-металл. Пр-во Германия</font></p>
+<p class="cnt" align="left"><font color="#000000" size="2"><strong>CROSSWEHR</strong> - Ручные ножовки по мокрой древесине, для стусла, для чистого распила, для ламинированных изделий. Производство Швеция.</font></p>
+<p class="cnt" align="left" style="text-indent:1em;"><font color="#000000"><font size="2">Товары, выпускаемые под собственными торг.марками в Тайване на европейском оборудовании:<br/><br/>
+
+    <strong>HAGWERT</strong>  – Буры и сверла по бетону, пики и долота, сверла по металлу, Со-5% сверла, сверла-фрезы, конические сверла, сверла по стеклу и керамической плитке 2-х и 4-х граные, сверла по дереву перовые, спиральные, алмазные диски.</font></font></p>
+<p class="cnt" align="left"><font color="#000000" size="2"><strong>NOX</strong> – широкий ассортимент бит, отвертки. Особенность – все биты от 50 мм – намагничены.</font></p>
+<p class="cnt" align="left"><font color="#000000" size="2"><strong>RUNEX</strong> - пилки для электроинструмента, пильные диски по дереву, ламинату, алюминию, ножовки по дереву.</font></p>
+<p class="cnt" align="left"><font color="#000000" size="2"><strong>STELGRIT</strong> – заклепочники, силовые заклепочники, мебельные степлеры и скобы.</font></p>
+<p class="cnt" align="left"><font color="#000000" size="2"><strong>STRIKE</strong>– молотки, кувалды, колуны.</font></p>
+<p class="cnt" align="left"><font color="#000000" size="2"><strong>NORK</strong> – рожково-накидные и рожковые ключи, наборы из них.</font></p>
+<p class="cnt" align="left"><font color="#000000" size="2"><strong>FOMERON</strong> – пистолеты для монтажной пены и геметиков.</font></p>
+<p class="cnt" align="left" style="text-indent:1em;"><font color="#000000" size="2">А также широкий ассортимент товара общего строительного назначения: шпатели из нерж.стали 
+    <strong>FLAT</strong>, резиновые шпатели, пассатижи и бокорезы <strong>TARG</strong>, рулетки 
+    <strong>Metric</strong>, строительные уровни <strong>METRIC TILER</strong>, абразивные ленты и круги 
+    <strong>ZIFLEX</strong>.</font></p>
+<p class="cnt" align="left" style="text-indent:1em;"><font color="#000000" size="2">Предлагаемый нашей компанией ручной инструмент Европейского качества соответствующий Российским государственным стандартам. Оптимальное соотношение цена/качество, русско-язычное описание товара, штрих-кодирование дает возможность для процветания наших партнеров на всей территории России.</font></p>
+<p class="cnt" align="left" style="text-indent:1em;"><font color="#000000" size="2">У нас гибкая система скидок и индивидуальных подход к каждому клиенту</font></p>
+<p class="cnt" align="left" style="text-indent:1em;"><font color="#000000" size="2">Осуществляется доставка товара до клиента не только по Москве, но и по Московской области. А также до терминалов Транспортных компаний.</font></p>
+</div>
+<div class="greyAbout">
+<div class="aboutInside">
+<div class="left">
+<p class="copy">&copy; ООО "Ворсино Инструмент" 2012 год</p>
+<p>Москва, 1-км Киевского шоссе, Бизнес-центр Румянцево<br /> м. Юго-Западная</p>
+</div>
+<div class="right">
+<p class="phone">(495) 795-75-98<br>
+<p class="mail"><a href="mailto:info@vorsinstrument.ru">info@vorsinstrument.ru</a></p>
+</div>
+<nav class="bottomMenu">
+<table cellspacing="0">
+<!-- Главное меню-->
+<tr>
+
+<td><a href="Stock.aspx">Акции</a></td>
+<td><a href="Сatalog.aspx">Каталог товаров</a></td>
+<td><a href="Buy.aspx">Применение</a></td>
+<td><a href="Contacts.aspx">Контакты</a></td>
+
+<!-- 
+<td><a href="/price_list">Прайс-лист</a></td>
+<td><a href="/6517">Ремонт</a></td>
+<td><a href="/6516">Доставка</a></td>
+<td><a href="/about">О компании</a></td>
+-->
+</tr>
+</table>
+<div id="hidden_main_menu"></div>
+</nav>
+</div>
+</div>
+<!-- Статистика посещаемости начало
+<div class="boottomInfo">
+<p class="rusoft"><a href="http://www.rusoft.ru/" target="_blank">Разработка <strong>Ru</strong>Soft <span>www.rusoft.ru</span></a></p>
+<div class="counter">
+<script src="http://tools.spylog.ru/counter_cv.js" id="spylog_code" type="text/javascript" counter="903789" part="" track_links="ext" page_level="0">
+</script><noscript>
+<a rel="nofollow" href="http://u9037.89.spylog.com/cnt?cid=903789&f=3&p=0" target="_blank">
+<img src="http://u9037.89.spylog.com/cnt?cid=903789&p=0" alt="SpyLOG" border="0" width="88" height="31"></a>
+</noscript>
+</div><div class="counter">
+
+<span id="openstat903789"></span>
+<script type="text/javascript">
+
+    var openstat = { counter: 903789, image: 87, color: "ff9822", next: openstat, track_links: "all" };
+    (function (d, t, p) {
+        var j = d.createElement(t); j.async = true; j.type = "text/javascript";
+        j.src = ("https:" == p ? "https:" : "http:") + "//openstat.net/cnt.js";
+        var s = d.getElementsByTagName(t)[0]; s.parentNode.insertBefore(j, s);
+    })(document, "script", document.location.protocol);
+
+</script>
+
+</div><div class="counter">
+<script type="text/javascript">
+
+                                   (function (d, w, c) {
+                                       (w[c] = w[c] || []).push(function () {
+                                           try {
+                                               w.yaCounter41474 = new Ya.Metrika({ id: 41474,
+                                                   webvisor: true,
+                                                   clickmap: true,
+                                                   trackLinks: true,
+                                                   accurateTrackBounce: true, params: window.yaParams || {}
+                                               });
+                                           } catch (e) { }
+                                       });
+
+                                       var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+                                       s.type = "text/javascript";
+                                       s.async = true;
+                                       s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+                                       if (w.opera == "[object Opera]") {
+                                           d.addEventListener("DOMContentLoaded", f, false);
+                                       } else { f(); }
+                                   })(document, window, "yandex_metrika_callbacks");
+</script><noscript><div><img src="//mc.yandex.ru/watch/41474" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+</div><div class="counter">
+<script type="text/javascript"><!--
+                               document.write("<a rel='nofollow' href='http://www.liveinternet.ru/click' " +
+"target=_blank><img src='http://counter.yadro.ru/hit?t14.6;r" +
+escape(document.referrer) + ((typeof (screen) == "undefined") ? "" :
+";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+";" + Math.random() +
+"' alt='' title='LiveInternet: показано число просмотров за 24" +
+" часа, посетителей за 24 часа и за сегодня' " +
+"border='0' width='88' height='31'></a>")
+</script>
+</div><div class="counter">
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37043380-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+</div>
+</div>
+ Cтатистика посещаемости конец-->
+</div>
+</footer>
+<!--Всплывающая реклама-->
+<!--
+<div class='commerc-popup '>
+<p><strong>Трудности с заливкой бетона зимой?</strong></p>
+<p><strong>Предлагаем&nbsp;</strong><a href="http://www.smsm.ru/catalog/09/093/0933"><strong>Установки прогрева бетона КТПТО-80, ТСДЗ</strong></a></p>
+<p><strong>Всегда в наличии на складе!!!</strong></p>
+<span class="commerc-popup__close">Закрыть</span>
+</div>
+<div class='commerc-popup commerc-popup_cl-green'>
+<p align="center"><strong>Внимание! </strong></p>
+<p align="center"><strong>Огромный ассортимент </strong><a href="http://www.smsm.ru/catalog/14"><strong>теплового оборудования</strong></a><strong>! </strong></p>
+<p align="center"><strong>Успей купить! </strong></p>
+<p align="center"><strong>Отличное качество по доступным ценам! Гарантия! Сервис!</strong></p>
+<span class="commerc-popup__close">Закрыть</span>
+</div>
+<div class='commerc-popup commerc-popup_cl-red'>
+<p align="center"><strong>Зима наступила! Утепляйтесь! </strong></p>
+<p align="center"><strong><a href="http://www.smsm.ru/catalog/19/1921">Зимняя спецодежда</a> и <a href="http://www.smsm.ru/catalog/19/8754">обувь!</a></strong></p>
+<p align="center"><strong>Широкий ассортимент! Низкие цены!</strong></p>
+<span class="commerc-popup__close">Закрыть</span>
+</div>
+<div class='commerc-popup '>
+<p align="center"><strong>ВНИМАНИЕ!!! </strong></p>
+<p align="center"><strong>Распродажа компрессоров!</strong></p>
+<p align="center"><strong>&nbsp;</strong><a href="http://www.smsm.ru/product/11004"><strong>Atlas Copco XAS 47</strong></a><strong> и </strong><a href="http://www.smsm.ru/product/11009"><strong>XAS 97</strong></a><strong> на шасси.</strong></p>
+<p align="center"><strong>Количество компрессоров ограничено. </strong></p>
+<p align="center"><strong>Успейте купить!</strong></p>
+<span class="commerc-popup__close">Закрыть</span>
+</div>
+<div class='commerc-popup commerc-popup_cl-green'>
+<p align="center"><strong>ВНИМАНИЕ! Снова в продаже по лучшим ценам!</strong></p>
+<p align="center"><a href="http://www.smsm.ru/catalog/16/161/1611"><strong>СТАНКИ ДЛЯ РЕЗКИ И ГИБКИ АРМАТУРЫ ZITREK!</strong></a></p>
+<p align="center"><strong>Гарантия качества!</strong></p>
+<span class="commerc-popup__close">Закрыть</span>
+</div>
+-->
+<!-- Вам перезвонить? -->
+<!--
+<div id="callMe" class="overlay callMe">
+<div class="dropShadow">
+<div class="dropShadowInside">
+<a class="button bgBot active" href="#">Вам перезвонить?</a>
+<div id='callme_msg'><p class="red">Сообщите Ваш номер телефона:</p></div>
+<form action="/callme" method="post" id="callme_frm" name="callme_frm" target="send_form">
+<input type="hidden" name="page" value="" />
+<label>Телефон<span>*</span></label>
+<input name="phone" type="tel">
+<label>Ф.И.О.<span>*</span></label>
+<input name="fio" type="text">
+<textarea placeholder="По какому вопросу..." name="question"></textarea>
+<p class="formGlobalDesc"><span class="red">*</span> поля, обязательные для заполнения</p>
+<p class="textCenter">
+<span class="buttonShadow small inline"><a class="button small blue" href="javascript:void(0);" onclick="document.getElementById('callme_frm').submit(); return false;"><span class="inside">Отправить</span></a></span>
+</p>
+</form>
+<span class="close" title="закрыть">закрыть</span>
+</div>
+</div>
+</div>
+-->
+<!-- /call me -->
+<!-- load order -->
+<div id="loadOrder" class="overlay loadOrder">
+<div class="dropShadow">
+<div class="dropShadowInside">
+<a class="button bgBot active" href="#">Пришлите заказ</a>
+<a class="button active topLoadBtn" href="#"><span class="inside"><span class="ico load"></span>Загрузить заказ</span></a>
+<h2 class="dropTitle">Заказ в произвольной форме</h2>
+<div id='fastorder_top_msg'></div>
+<div id='fastorder_form'>
+<p>Загрузите файл в <strong>любом формате</strong>, содержащий необходимые Вам товарные позиции:<span style="color: #D83801;">*</span></p>
+<form action="/fastorder" method="post" id="fastorder_frm" name="fastorder_frm" enctype='multipart/form-data' target="send_form">
+<input type="hidden" name="page" value="" />
+<div class="elemBox file">
+<a class="button smallest" title="выберите файл"><span class="inside"><input type="file" name="addfile[]">Обзор...</span></a>
+<div class="inputBox">
+<input class="text" type="text" value="" name="file[]" readonly="readonly">
+</div>
+</div>
+<div class="elemBox file hide">
+<a class="button smallest" title="выберите файл"><span class="inside"><input type="file" name="addfile[]">Обзор...</span></a>
+<div class="inputBox">
+<input class="text" type="text" value="" name="file[]" readonly="readonly">
+</div>
+</div>
+<div class="elemBox file hide">
+<a class="button smallest" title="выберите файл"><span class="inside"><input type="file" name="addfile[]">Обзор...</span></a>
+<div class="inputBox">
+<input class="text" type="text" value="" name="file[]" readonly="readonly">
+</div>
+</div>
+<p><a class="addMoreFile" href="#">Добавить ещё файл</a></p>
+<hr>
+<div id='fastorder_msg'><p class="red">Оставьте Ваши контактные данные:</p></div>
+<label>Телефон<span>*</span></label>
+<input name="phone" type="tel">
+<label>Ф.И.О.<span>*</span></label>
+<input name="fio" type="text">
+<label>E-mail</label>
+<input name="email" type="email">
+<textarea placeholder="Ваш комментарий..." name="description"></textarea>
+<p class="formGlobalDesc"><span class="red">*</span> поля, обязательные для заполнения</p>
+<p class="textCenter">
+<span class="buttonShadow small inline"><a class="button small blue" href="javascript:void(0);" onclick="document.getElementById('fastorder_frm').submit(); return false;"><span class="inside">Отправить заявку</span></a></span>
+</p>
+</form>
+</div>
+<span class="close" title="закрыть">закрыть</span>
+</div>
+</div>
+</div>
+<!-- /load order -->
+<iframe id="send_form" name="send_form" src='about:blank' width=0 height=0 border=0 style='visibility:hidden'></iframe>
+
+<div id="drop_map_show"></div>
+<noindex>
+<div id="message" style="display: none; position: absolute; top: 19%; left: 30%; z-index: 90000">
+<div style="font-weight: bold; border: 2px solid #E1E1E1; padding: 10px 20px; width: 200px; background-color: #FBFBFB">
+<div align="right"><a href="#" onclick="$('message').style.display = 'none'; return false;">Закрыть</a></div>
+</div>
+</div>
+<div id="geomap" style="display:none; position:absolute; z-index:1000; background:#fff;">
+<div style="float:right; padding-right:25px; padding-bottom: 6px"><a href="#" onclick="showMap();return false">закрыть</a></div>
+<span>СТРОЙМАШСЕРВИС В РЕГИОНАХ</span>
+<div id="flashcontent"><div style="width: 400px"><strong><p>Для просмотра карты необходимо установить Flash Player!<br><br>Нажмите <a href="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" target="tmp">ссылку</a>, чтобы произвести установку.<br>После окончания установки перезагрузите страницу.</p></strong></div></div>
+<script type="text/javascript">
+    var so = new SWFObject("/images/map7.swf", "flashcontent", "900", "504", "9", "#FFFFFF");
+    so.addVariable("tURL", "/xmlmap.php");
+    so.write("flashcontent");
+		</script>
+</div>
+<script>
+    function showMap() {
+        Position.prepare();
+        if ($('geomap')) {
+            $('geomap').style.top = (getClientHeight() - 504) / 2 + "px";
+            $('geomap').style.left = (getClientWidth() - 900) / 2 + "px";
+        }
+        Element.toggle('geomap');
+    }
+    function getClientWidth() {
+        return document.compatMode == 'CSS1Compat' && !window.opera ? document.documentElement.clientWidth : document.body.clientWidth;
+    }
+    function getClientHeight() {
+        return document.compatMode == 'CSS1Compat' && !window.opera ? document.documentElement.clientHeight : document.body.clientHeight;
+    }
+</script>
+</noindex>
+<iframe id="tmp" name="tmp" style="display: none" width="0" height="0" src="" border="0" frameborder="0"></iframe>
+</body>
+</html>

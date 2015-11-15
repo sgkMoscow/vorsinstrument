@@ -1,0 +1,2691 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AF663AFA-6D81-4A48-86AE-EC8CC58DCAD5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vorsinstrument</RootNamespace>
+    <AssemblyName>vorsinstrument</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="ax.aspx" />
+    <Content Include="ax_1.aspx" />
+    <Content Include="ax_2.aspx" />
+    <Content Include="Bits.aspx" />
+    <Content Include="bits_1.aspx" />
+    <Content Include="bits_2.aspx" />
+    <Content Include="bits_3.aspx" />
+    <Content Include="bits_4.aspx" />
+    <Content Include="bits_5.aspx" />
+    <Content Include="bits_6.aspx" />
+    <Content Include="Blade.aspx" />
+    <Content Include="blade_1.aspx" />
+    <Content Include="blade_2.aspx" />
+    <Content Include="blade_3.aspx" />
+    <Content Include="Buy.aspx" />
+    <Content Include="buyOK.aspx" />
+    <Content Include="buy_bits_Nox_6x48.aspx" />
+    <Content Include="buy_Error.aspx" />
+    <Content Include="bxslider\images\bx_loader.gif" />
+    <Content Include="bxslider\images\controls.png" />
+    <Content Include="bxslider\jquery.bxslider1.css" />
+    <Content Include="bxslider\jquery.bxslider1.js" />
+    <Content Include="bxslider\jquery.min1.js" />
+    <Content Include="bxslider\news\news_1.jpg" />
+    <Content Include="bxslider\news\news_2.jpg" />
+    <Content Include="bxslider\news\news_3.jpg" />
+    <Content Include="bxslider\news\pic1.png" />
+    <Content Include="bxslider\news\pic2.jpg" />
+    <Content Include="bxslider\news\pic3.jpg" />
+    <Content Include="bxslider\plugins\jquery.easing.1.3.js" />
+    <Content Include="bxslider\plugins\jquery.fitvids.js" />
+    <Content Include="bxslider\scripts1.js" />
+    <Content Include="callMe.aspx" />
+    <Content Include="Circle.aspx" />
+    <Content Include="circle_1.aspx" />
+    <Content Include="circle_2.aspx" />
+    <Content Include="circle_3.aspx" />
+    <Content Include="circle_4.aspx" />
+    <Content Include="Collet.aspx" />
+    <Content Include="collet_1.aspx" />
+    <Content Include="collet_2.aspx" />
+    <Content Include="Contacts.aspx" />
+    <Content Include="css\css.css" />
+    <Content Include="css\css2.css" />
+    <Content Include="css\jquery.fancybox.css" />
+    <Content Include="css\jquery.jcarousel.css" />
+    <Content Include="css\jquery.jqzoom.css" />
+    <Content Include="css\jquery.mobilyslider.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Diamond.aspx" />
+    <Content Include="diamond_disc.aspx" />
+    <Content Include="drill.aspx" />
+    <Content Include="Drills.aspx" />
+    <Content Include="drills_1.aspx" />
+    <Content Include="drills_10.aspx" />
+    <Content Include="drills_11.aspx" />
+    <Content Include="drills_12.aspx" />
+    <Content Include="drills_13.aspx" />
+    <Content Include="drills_14.aspx" />
+    <Content Include="drills_15.aspx" />
+    <Content Include="drills_16.aspx" />
+    <Content Include="drills_17.aspx" />
+    <Content Include="drills_18.aspx" />
+    <Content Include="drills_2.aspx" />
+    <Content Include="drills_3.aspx" />
+    <Content Include="drills_4.aspx" />
+    <Content Include="drills_5.aspx" />
+    <Content Include="drills_6.aspx" />
+    <Content Include="drills_7.aspx" />
+    <Content Include="drills_8.aspx" />
+    <Content Include="drills_9.aspx" />
+    <Content Include="drill_1.aspx" />
+    <Content Include="drill_2.aspx" />
+    <Content Include="drill_3.aspx" />
+    <Content Include="Fasteners.aspx" />
+    <Content Include="fasteners_1.aspx" />
+    <Content Include="fasteners_2.aspx" />
+    <Content Include="fasteners_3.aspx" />
+    <Content Include="fasteners_4.aspx" />
+    <Content Include="fasteners_5.aspx" />
+    <Content Include="Fastening_tool.aspx" />
+    <Content Include="fastening_tool_1.aspx" />
+    <Content Include="fastening_tool_2.aspx" />
+    <Content Include="fastening_tool_3.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="css\blizter.css" />
+    <Content Include="Gun.aspx" />
+    <Content Include="gun_1.aspx" />
+    <Content Include="gun_2.aspx" />
+    <Content Include="Hacksaw.aspx" />
+    <Content Include="hacksaw_1.aspx" />
+    <Content Include="images\Bg_menu.png" />
+    <Content Include="images\callMe.png" />
+    <Content Include="images\callMeMini.png" />
+    <Content Include="images\Captcha\1.JPG" />
+    <Content Include="images\Captcha\2.JPG" />
+    <Content Include="images\Captcha\3.JPG" />
+    <Content Include="images\Captcha\4.JPG" />
+    <Content Include="images\Captcha\5.JPG" />
+    <Content Include="images\Captcha\6.JPG" />
+    <Content Include="images\default_head.PNG" />
+    <Content Include="images\emailMini.gif" />
+    <Content Include="images\error.png" />
+    <Content Include="images\ico_phone.gif" />
+    <Content Include="images\line.jpg" />
+    <Content Include="images\main_catalog\ax.png" />
+    <Content Include="images\main_catalog\ax_min.PNG" />
+    <Content Include="images\main_catalog\bits.png" />
+    <Content Include="images\main_catalog\bits_min.png" />
+    <Content Include="images\main_catalog\blade.png" />
+    <Content Include="images\main_catalog\blade_min.PNG" />
+    <Content Include="images\main_catalog\circle.png" />
+    <Content Include="images\main_catalog\circle_min.png" />
+    <Content Include="images\main_catalog\collet.png" />
+    <Content Include="images\main_catalog\collet_min.png" />
+    <Content Include="images\main_catalog\diamond.png" />
+    <Content Include="images\main_catalog\diamond_min.png" />
+    <Content Include="images\main_catalog\drill.png" />
+    <Content Include="images\main_catalog\drills.png" />
+    <Content Include="images\main_catalog\drills_min.png" />
+    <Content Include="images\main_catalog\drill_min.png" />
+    <Content Include="images\main_catalog\fasteners.png" />
+    <Content Include="images\main_catalog\fasteners_min.png" />
+    <Content Include="images\main_catalog\fastening_tool.png" />
+    <Content Include="images\main_catalog\fastening_tool_min.png" />
+    <Content Include="images\main_catalog\gun.png" />
+    <Content Include="images\main_catalog\gun_min.png" />
+    <Content Include="images\main_catalog\hacksaw.png" />
+    <Content Include="images\main_catalog\hacksaw_min.png" />
+    <Content Include="images\main_catalog\measuring_tool.png" />
+    <Content Include="images\main_catalog\measuring_tool_min.png" />
+    <Content Include="images\main_catalog\painting_tools.png" />
+    <Content Include="images\main_catalog\painting_tools_min.png" />
+    <Content Include="images\main_catalog\sawing.png" />
+    <Content Include="images\main_catalog\sawing_min.png" />
+    <Content Include="images\main_catalog\small_tool.png" />
+    <Content Include="images\main_catalog\small_tool_min.png" />
+    <Content Include="images\main_catalog\spades.png" />
+    <Content Include="images\main_catalog\spades_min.png" />
+    <Content Include="images\main_catalog\stands.png" />
+    <Content Include="images\main_catalog\stands_min.png" />
+    <Content Include="images\map_BP.JPG" />
+    <Content Include="images\ny_main_menu_bg.png" />
+    <Content Include="images\Ok.png" />
+    <Content Include="images\products\085-086.JPG" />
+    <Content Include="images\products\100-10_186-10.PNG" />
+    <Content Include="images\products\186-10_196-10.PNG" />
+    <Content Include="images\products\192001-193007.JPG" />
+    <Content Include="images\products\195001-196005.JPG" />
+    <Content Include="images\products\3100-BOX-1.JPG" />
+    <Content Include="images\products\3100-BOX-8.JPG" />
+    <Content Include="images\products\3101-2.JPG" />
+    <Content Include="images\products\3101-F.JPG" />
+    <Content Include="images\products\3101-KR-2.JPG" />
+    <Content Include="images\products\3101-l-2.JPG" />
+    <Content Include="images\products\3102-2.JPG" />
+    <Content Include="images\products\3102-F.JPG" />
+    <Content Include="images\products\3103-2.JPG" />
+    <Content Include="images\products\3103-l-2.JPG" />
+    <Content Include="images\products\3104-2.JPG" />
+    <Content Include="images\products\3104-l.JPG" />
+    <Content Include="images\products\3104.JPG" />
+    <Content Include="images\products\3105.JPG" />
+    <Content Include="images\products\3106-2.JPG" />
+    <Content Include="images\products\3106-l.JPG" />
+    <Content Include="images\products\3106.JPG" />
+    <Content Include="images\products\31065.JPG" />
+    <Content Include="images\products\3107.JPG" />
+    <Content Include="images\products\3108-l.JPG" />
+    <Content Include="images\products\3108.JPG" />
+    <Content Include="images\products\31085.JPG" />
+    <Content Include="images\products\3109-2.JPG" />
+    <Content Include="images\products\3109.JPG" />
+    <Content Include="images\products\3110-4432.jpg" />
+    <Content Include="images\products\3110.JPG" />
+    <Content Include="images\products\3111-2.JPG" />
+    <Content Include="images\products\3111-F.JPG" />
+    <Content Include="images\products\3111.JPG" />
+    <Content Include="images\products\3112.JPG" />
+    <Content Include="images\products\3113-2.JPG" />
+    <Content Include="images\products\3113-F.JPG" />
+    <Content Include="images\products\3113.JPG" />
+    <Content Include="images\products\31135-F.JPG" />
+    <Content Include="images\products\3114-F.JPG" />
+    <Content Include="images\products\3114.JPG" />
+    <Content Include="images\products\3115.JPG" />
+    <Content Include="images\products\3116.JPG" />
+    <Content Include="images\products\3118-2.JPG" />
+    <Content Include="images\products\3118-F.JPG" />
+    <Content Include="images\products\3118.JPG" />
+    <Content Include="images\products\3121-1.JPG" />
+    <Content Include="images\products\3141.JPG" />
+    <Content Include="images\products\3145-2.JPG" />
+    <Content Include="images\products\3145.JPG" />
+    <Content Include="images\products\3150-F-2.JPG" />
+    <Content Include="images\products\3150-F.JPG" />
+    <Content Include="images\products\3156-F.JPG" />
+    <Content Include="images\products\3160-F.JPG" />
+    <Content Include="images\products\3160.JPG" />
+    <Content Include="images\products\3171-5.JPG" />
+    <Content Include="images\products\3171.JPG" />
+    <Content Include="images\products\3172.JPG" />
+    <Content Include="images\products\3181.JPG" />
+    <Content Include="images\products\3182.JPG" />
+    <Content Include="images\products\3197-3.JPG" />
+    <Content Include="images\products\3198-5.JPG" />
+    <Content Include="images\products\477709.JPG" />
+    <Content Include="images\products\500000-6.jpg" />
+    <Content Include="images\products\500007-11.jpg" />
+    <Content Include="images\products\500012-16.jpg" />
+    <Content Include="images\products\500017-21.jpg" />
+    <Content Include="images\products\501-10-1_513-10.PNG" />
+    <Content Include="images\products\5014-5520.PNG" />
+    <Content Include="images\products\502001.jpg" />
+    <Content Include="images\products\506004.jpg" />
+    <Content Include="images\products\506005-016.JPG" />
+    <Content Include="images\products\506005.jpg" />
+    <Content Include="images\products\506100-101.jpg" />
+    <Content Include="images\products\506101.jpg" />
+    <Content Include="images\products\509001.JPG" />
+    <Content Include="images\products\5090011-12.jpg" />
+    <Content Include="images\products\509002.jpg" />
+    <Content Include="images\products\509003.jpg" />
+    <Content Include="images\products\509004.jpg" />
+    <Content Include="images\products\509005.jpg" />
+    <Content Include="images\products\509006.jpg" />
+    <Content Include="images\products\509007.JPG" />
+    <Content Include="images\products\509008.jpg" />
+    <Content Include="images\products\509009.jpg" />
+    <Content Include="images\products\551001-029.JPG" />
+    <Content Include="images\products\552001-552007.jpg" />
+    <Content Include="images\products\553001-553006.JPG" />
+    <Content Include="images\products\554101-554113.jpg" />
+    <Content Include="images\products\554150-554160.PNG" />
+    <Content Include="images\products\554251-554207.PNG" />
+    <Content Include="images\products\554400.PNG" />
+    <Content Include="images\products\554500-501.PNG" />
+    <Content Include="images\products\554502.jpg" />
+    <Content Include="images\products\554754-554810.JPG" />
+    <Content Include="images\products\554900-28.jpg" />
+    <Content Include="images\products\555001-2.JPG" />
+    <Content Include="images\products\555002-2.JPG" />
+    <Content Include="images\products\555008-2.JPG" />
+    <Content Include="images\products\555009-2.JPG" />
+    <Content Include="images\products\555101-2.JPG" />
+    <Content Include="images\products\555101-5.JPG" />
+    <Content Include="images\products\555102-2.JPG" />
+    <Content Include="images\products\555103-2.JPG" />
+    <Content Include="images\products\555104-2.JPG" />
+    <Content Include="images\products\555105-2.JPG" />
+    <Content Include="images\products\555106-2.JPG" />
+    <Content Include="images\products\555109-2.JPG" />
+    <Content Include="images\products\555110-2.JPG" />
+    <Content Include="images\products\555111-2.JPG" />
+    <Content Include="images\products\555114-2.JPG" />
+    <Content Include="images\products\555115-2.JPG" />
+    <Content Include="images\products\555116-2.JPG" />
+    <Content Include="images\products\555118-2.JPG" />
+    <Content Include="images\products\555120-2.JPG" />
+    <Content Include="images\products\555121-2.JPG" />
+    <Content Include="images\products\555122-2.JPG" />
+    <Content Include="images\products\555123-2.JPG" />
+    <Content Include="images\products\555125-2.JPG" />
+    <Content Include="images\products\555126-2.JPG" />
+    <Content Include="images\products\555127-2.JPG" />
+    <Content Include="images\products\555128-2.JPG" />
+    <Content Include="images\products\555130-2.JPG" />
+    <Content Include="images\products\555131-2.JPG" />
+    <Content Include="images\products\555132-2.JPG" />
+    <Content Include="images\products\555133-2.JPG" />
+    <Content Include="images\products\555134-2.JPG" />
+    <Content Include="images\products\555805.JPG" />
+    <Content Include="images\products\555813.JPG" />
+    <Content Include="images\products\555814.JPG" />
+    <Content Include="images\products\555815.JPG" />
+    <Content Include="images\products\555816.JPG" />
+    <Content Include="images\products\555817.JPG" />
+    <Content Include="images\products\555819.JPG" />
+    <Content Include="images\products\555821.JPG" />
+    <Content Include="images\products\555823.JPG" />
+    <Content Include="images\products\556006-199.PNG" />
+    <Content Include="images\products\556201-200.JPG" />
+    <Content Include="images\products\556301-313.jpg" />
+    <Content Include="images\products\556401-416.jpg" />
+    <Content Include="images\products\556712_556105.jpg" />
+    <Content Include="images\products\556907-904.jpg" />
+    <Content Include="images\products\556910-11.JPG" />
+    <Content Include="images\products\559100.JPG" />
+    <Content Include="images\products\559112-155.jpg" />
+    <Content Include="images\products\559199.JPG" />
+    <Content Include="images\products\559212-35.jpg" />
+    <Content Include="images\products\559310-559440.JPG" />
+    <Content Include="images\products\559500.JPG" />
+    <Content Include="images\products\559506-510.JPG" />
+    <Content Include="images\products\560101.JPG" />
+    <Content Include="images\products\560102-3.JPG" />
+    <Content Include="images\products\560104.JPG" />
+    <Content Include="images\products\560105.JPG" />
+    <Content Include="images\products\560201-206.JPG" />
+    <Content Include="images\products\560300.jpg" />
+    <Content Include="images\products\560301-307.JPG" />
+    <Content Include="images\products\560402-401.JPG" />
+    <Content Include="images\products\562001-069.JPG" />
+    <Content Include="images\products\562091-093.JPG" />
+    <Content Include="images\products\562097-98.jpg" />
+    <Content Include="images\products\563101-109.jpg" />
+    <Content Include="images\products\563301-303.JPG" />
+    <Content Include="images\products\563401-411.jpg" />
+    <Content Include="images\products\563501-563509.JPG" />
+    <Content Include="images\products\563502.JPG" />
+    <Content Include="images\products\564103-564110.JPG" />
+    <Content Include="images\products\564201.JPG" />
+    <Content Include="images\products\564202-564203.JPG" />
+    <Content Include="images\products\564204.JPG" />
+    <Content Include="images\products\564301.JPG" />
+    <Content Include="images\products\564302.JPG" />
+    <Content Include="images\products\564410-564420.JPG" />
+    <Content Include="images\products\564501-504.JPG" />
+    <Content Include="images\products\564606-564610.JPG" />
+    <Content Include="images\products\566010-566130.JPG" />
+    <Content Include="images\products\567010-567913.JPG" />
+    <Content Include="images\products\568010-568130.JPG" />
+    <Content Include="images\products\570001-4.jpg" />
+    <Content Include="images\products\570131-136.JPG" />
+    <Content Include="images\products\570151-155.JPG" />
+    <Content Include="images\products\570201-207.JPG" />
+    <Content Include="images\products\571004.JPG" />
+    <Content Include="images\products\571005.JPG" />
+    <Content Include="images\products\572001-004.PNG" />
+    <Content Include="images\products\572200-202.JPG" />
+    <Content Include="images\products\574001-574003.jpg" />
+    <Content Include="images\products\574004-05.jpg" />
+    <Content Include="images\products\574007-08.png" />
+    <Content Include="images\products\574011-574012.jpg" />
+    <Content Include="images\products\574015-13.png" />
+    <Content Include="images\products\574017-18.png" />
+    <Content Include="images\products\574021.jpg" />
+    <Content Include="images\products\574031.jpg" />
+    <Content Include="images\products\574041.jpg" />
+    <Content Include="images\products\575010-575913.JPG" />
+    <Content Include="images\products\575919.JPG" />
+    <Content Include="images\products\576004-10.JPG" />
+    <Content Include="images\products\576104-5-6-8-10-12.JPG" />
+    <Content Include="images\products\577401-03.jpg" />
+    <Content Include="images\products\577404.png" />
+    <Content Include="images\products\577405.png" />
+    <Content Include="images\products\577407.png" />
+    <Content Include="images\products\577421-22.png" />
+    <Content Include="images\products\577431-32.JPG" />
+    <Content Include="images\products\577441-42.JPG" />
+    <Content Include="images\products\580511-1231.png" />
+    <Content Include="images\products\590004.JPG" />
+    <Content Include="images\products\590005.jpg" />
+    <Content Include="images\products\590007.JPG" />
+    <Content Include="images\products\590021.JPG" />
+    <Content Include="images\products\590022.JPG" />
+    <Content Include="images\products\590023.JPG" />
+    <Content Include="images\products\590411-6531.png" />
+    <Content Include="images\products\591001.JPG" />
+    <Content Include="images\products\591003.jpg" />
+    <Content Include="images\products\591004.jpg" />
+    <Content Include="images\products\591005.jpg" />
+    <Content Include="images\products\591006.JPG" />
+    <Content Include="images\products\610004-05.JPG" />
+    <Content Include="images\products\610361-1615.JPG" />
+    <Content Include="images\products\620360-1615.JPG" />
+    <Content Include="images\products\640106-640125.JPG" />
+    <Content Include="images\products\642901.JPG" />
+    <Content Include="images\products\643101.JPG" />
+    <Content Include="images\products\643102.JPG" />
+    <Content Include="images\products\643103.jpg" />
+    <Content Include="images\products\650-4-671-1.jpg" />
+    <Content Include="images\products\650010-650130.JPG" />
+    <Content Include="images\products\650206.jpg" />
+    <Content Include="images\products\650213.JPG" />
+    <Content Include="images\products\650219.JPG" />
+    <Content Include="images\products\655001.JPG" />
+    <Content Include="images\products\655014.JPG" />
+    <Content Include="images\products\655200-655201.JPG" />
+    <Content Include="images\products\655202.JPG" />
+    <Content Include="images\products\6605.JPG" />
+    <Content Include="images\products\6620-24-1.JPG" />
+    <Content Include="images\products\6620-24.JPG" />
+    <Content Include="images\products\680012-55.JPG" />
+    <Content Include="images\products\700065-80.JPG" />
+    <Content Include="images\products\780040-780600.jpg" />
+    <Content Include="images\products\780100.JPG" />
+    <Content Include="images\products\781615-781825.jpg" />
+    <Content Include="images\products\790411.jpg" />
+    <Content Include="images\products\791001-013.JPG" />
+    <Content Include="images\products\850125-855040.png" />
+    <Content Include="images\products\910-913.png" />
+    <Content Include="images\products\914-915.png" />
+    <Content Include="images\products\915-26.png" />
+    <Content Include="images\products\916-9-917-9.png" />
+    <Content Include="images\products\hagwert.PNG" />
+    <Content Include="images\products\IMG_5767.JPG" />
+    <Content Include="images\products\791001-013_vertical.JPG" />
+    <Content Include="images\second_catalog\569010-130.JPG" />
+    <Content Include="images\second_catalog\640106-125.jpg" />
+    <Content Include="images\second_catalog\ax_1.PNG" />
+    <Content Include="images\second_catalog\ax_2.PNG" />
+    <Content Include="images\second_catalog\bits_1.JPG" />
+    <Content Include="images\second_catalog\bits_2.PNG" />
+    <Content Include="images\second_catalog\bits_3.PNG" />
+    <Content Include="images\second_catalog\bits_3old.PNG" />
+    <Content Include="images\second_catalog\bits_4.PNG" />
+    <Content Include="images\second_catalog\bits_5.PNG" />
+    <Content Include="images\second_catalog\bits_6.PNG" />
+    <Content Include="images\second_catalog\blade_1.JPG" />
+    <Content Include="images\second_catalog\blade_2.jpg" />
+    <Content Include="images\second_catalog\blade_3.JPG" />
+    <Content Include="images\second_catalog\circle_1.PNG" />
+    <Content Include="images\second_catalog\circle_2.PNG" />
+    <Content Include="images\second_catalog\circle_3.PNG" />
+    <Content Include="images\second_catalog\circle_4.PNG" />
+    <Content Include="images\second_catalog\collet_1.PNG" />
+    <Content Include="images\second_catalog\collet_2.PNG" />
+    <Content Include="images\second_catalog\diamond_1.PNG" />
+    <Content Include="images\second_catalog\drills_1.jpg" />
+    <Content Include="images\second_catalog\drills_1.PNG" />
+    <Content Include="images\second_catalog\drills_10.PNG" />
+    <Content Include="images\second_catalog\drills_11.PNG" />
+    <Content Include="images\second_catalog\drills_12.PNG" />
+    <Content Include="images\second_catalog\drills_13.PNG" />
+    <Content Include="images\second_catalog\drills_14.PNG" />
+    <Content Include="images\second_catalog\drills_15.PNG" />
+    <Content Include="images\second_catalog\drills_16.PNG" />
+    <Content Include="images\second_catalog\drills_17.PNG" />
+    <Content Include="images\second_catalog\drills_18.PNG" />
+    <Content Include="images\second_catalog\drills_2.PNG" />
+    <Content Include="images\second_catalog\drills_3.PNG" />
+    <Content Include="images\second_catalog\drills_4.JPG" />
+    <Content Include="images\second_catalog\drills_4.PNG" />
+    <Content Include="images\second_catalog\drills_5.PNG" />
+    <Content Include="images\second_catalog\drills_6.PNG" />
+    <Content Include="images\second_catalog\drills_7.PNG" />
+    <Content Include="images\second_catalog\drills_8.PNG" />
+    <Content Include="images\second_catalog\drills_9.PNG" />
+    <Content Include="images\second_catalog\drill_1.PNG" />
+    <Content Include="images\second_catalog\drill_2.PNG" />
+    <Content Include="images\second_catalog\drill_3.PNG" />
+    <Content Include="images\second_catalog\fasteners_0.jpg" />
+    <Content Include="images\second_catalog\fasteners_1.jpg" />
+    <Content Include="images\second_catalog\fasteners_2.jpg" />
+    <Content Include="images\second_catalog\fasteners_3.jpg" />
+    <Content Include="images\second_catalog\fasteners_4.jpg" />
+    <Content Include="images\second_catalog\fasteners_5.jpg" />
+    <Content Include="images\second_catalog\fastening_tool_1.PNG" />
+    <Content Include="images\second_catalog\fastening_tool_2.PNG" />
+    <Content Include="images\second_catalog\fastening_tool_3.PNG" />
+    <Content Include="images\second_catalog\gun_1.PNG" />
+    <Content Include="images\second_catalog\gun_2.PNG" />
+    <Content Include="images\second_catalog\hacksaw_1.PNG" />
+    <Content Include="images\second_catalog\measuring_tool_1.PNG" />
+    <Content Include="images\second_catalog\measuring_tool_2.PNG" />
+    <Content Include="images\second_catalog\painting_tools_1.PNG" />
+    <Content Include="images\second_catalog\painting_tools_2.PNG" />
+    <Content Include="images\second_catalog\sawing_1.PNG" />
+    <Content Include="images\second_catalog\sawing_2.PNG" />
+    <Content Include="images\second_catalog\small_tool_1.PNG" />
+    <Content Include="images\second_catalog\small_tool_10.jpg" />
+    <Content Include="images\second_catalog\small_tool_11.jpg" />
+    <Content Include="images\second_catalog\small_tool_12.PNG" />
+    <Content Include="images\second_catalog\small_tool_2.PNG" />
+    <Content Include="images\second_catalog\small_tool_3.PNG" />
+    <Content Include="images\second_catalog\small_tool_4.PNG" />
+    <Content Include="images\second_catalog\small_tool_5.PNG" />
+    <Content Include="images\second_catalog\small_tool_6.PNG" />
+    <Content Include="images\second_catalog\small_tool_7.PNG" />
+    <Content Include="images\second_catalog\small_tool_8.jpg" />
+    <Content Include="images\second_catalog\small_tool_9.jpg" />
+    <Content Include="images\second_catalog\spades_1.PNG" />
+    <Content Include="images\second_catalog\spades_2.PNG" />
+    <Content Include="images\second_catalog\spades_3.PNG" />
+    <Content Include="images\skypeMini.gif" />
+    <Content Include="images\stock\1.PNG" />
+    <Content Include="images\stock\2.PNG" />
+    <Content Include="images\three_catalog\bits_1.JPG" />
+    <Content Include="images\three_catalog\delivery_img.PNG" />
+    <Content Include="javascripts\crem.js" />
+    <Content Include="javascripts\highslide-4.1.13\highslide-full.js" />
+    <Content Include="javascripts\highslide-4.1.13\highslide.css" />
+    <Content Include="javascripts\menu.js" />
+    <Content Include="javascripts\menu100_0.js" />
+    <Content Include="javascripts\jquery.dropdown.js" />
+    <Content Include="javascripts\jquery.fancybox.js" />
+    <Content Include="javascripts\jquery.jcarousel.js" />
+    <Content Include="javascripts\jquery.jcarousel.min.js" />
+    <Content Include="javascripts\jquery.mobilyslider.js" />
+    <Content Include="javascripts\jquery.placeholder.min.js" />
+    <Content Include="javascripts\main.js" />
+    <Content Include="javascripts\main_new.js" />
+    <Content Include="javascripts\modernizr.min.js" />
+    <Content Include="javascripts\preview_templates.js" />
+    <Content Include="javascripts\prototype.js" />
+    <Content Include="javascripts\search_autosuggest.js" />
+    <Content Include="javascripts\swfobject.js" />
+    <Content Include="Measuring_tool.aspx" />
+    <Content Include="measuring_tool_1.aspx" />
+    <Content Include="measuring_tool_2.aspx" />
+    <Content Include="Painting_tools.aspx" />
+    <Content Include="painting_tools_1.aspx" />
+    <Content Include="painting_tools_2.aspx" />
+    <Content Include="poisk_instrumenta.aspx" />
+    <Content Include="resources\logo.PNG" />
+    <Content Include="robots.txt" />
+    <Content Include="Sawing.aspx" />
+    <Content Include="sawing_1.aspx" />
+    <Content Include="sawing_2.aspx" />
+    <Content Include="Search.aspx" />
+    <Content Include="sitemap.xml" />
+    <Content Include="Small_tool.aspx" />
+    <Content Include="small_tool_12.aspx" />
+    <Content Include="small_tool_1.aspx" />
+    <Content Include="small_tool_10.aspx" />
+    <Content Include="small_tool_11.aspx" />
+    <Content Include="small_tool_2.aspx" />
+    <Content Include="small_tool_3.aspx" />
+    <Content Include="small_tool_4.aspx" />
+    <Content Include="small_tool_5.aspx" />
+    <Content Include="small_tool_6.aspx" />
+    <Content Include="small_tool_7.aspx" />
+    <Content Include="small_tool_8.aspx" />
+    <Content Include="small_tool_9.aspx" />
+    <Content Include="Spades.aspx" />
+    <Content Include="spades_1.aspx" />
+    <Content Include="spades_2.aspx" />
+    <Content Include="stands_1.aspx" />
+    <Content Include="Stock.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Test.aspx" />
+    <Content Include="test.htm" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="buy_gun_foam_fomeron_clean.aspx" />
+    <Content Include="buy_gun_foam_Fomeron_Classic.aspx" />
+    <Content Include="buy_gun_foam_Fomeron_Top.aspx" />
+    <Content Include="buy_gun_foam_Blast_Hard.aspx" />
+    <Content Include="buy_gun_foam_Blast_Lite.aspx" />
+    <Content Include="buy_gun_foam_Blast.aspx" />
+    <Content Include="buy_gun_sealant_Caulker_Blast.aspx" />
+    <Content Include="buy_gun_sealant_no_drop_Blast.aspx" />
+    <Content Include="buy_gun_sealant_pressor_Blast.aspx" />
+    <Content Include="buy_gun_sealant_tube_Blast.aspx" />
+    <Content Include="buy_gun_sealant_tube_long_Blast.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_keramike_hagwert_115.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_keramike_hagwert_125.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_keramike_hagwert_150.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_keramike_hagwert_180.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_keramike_hagwert_200.aspx.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_keramike_hagwert_230.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_115.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_125.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_150.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_180.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_230.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_115.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_125.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_150.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_180.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_230.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_115.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_125.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_150.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_180.aspx" />
+    <Content Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_230.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_4x110mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_5x110mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_5x160mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_5x210mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_6x110mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_6x160mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_6x210mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_8x110mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_8x160mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_8x210mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_8x260mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_8x310mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_8x350mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_8x460mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_8x600mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_10x1000mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_10x110mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_10x160mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_10x210mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_10x260mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_10x310mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_10x350mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_10x460mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_10x600mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_10x800mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_12x1000mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_12x160mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_12x210mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_12x260mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_12x310mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_12x350mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_12x460mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_12x600mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_12x800mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_14x1000mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_14x210mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_14x260mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_14x310mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_14x460mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_14x600mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_14x800mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_16x1000mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_16x210mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_16x310mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_16x460mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_16x600mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_16x800mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_18x1000mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_18x310mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_18x460mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_18x600mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_18x800mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_20x1000mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_20x310mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_20x460mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_20x600mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_20x800mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_22x1000mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_22x460mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_22x600mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_22x800mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_24x1000mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_24x800mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_25x1000mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_25x800mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_6x260mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_6_5x210mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_6_5x260mm.aspx" />
+    <Content Include="sverlo_bur_po_betonu_hagwert_SDS_6_5x310mm.aspx" />
+    <Content Include="nabor_sverl_bur_po_betonu_hagwert_SDS_5_10x110_160mm.aspx" />
+    <Content Include="nabor_sverl_bur_po_betonu_hagwert_SDS_6_10x110_160mm.aspx" />
+    <Content Include="Sverlo_po_steklu_Hagwert_4mm.aspx" />
+    <Content Include="Sverlo_po_steklu_Hagwert_5mm.aspx" />
+    <Content Include="Sverlo_po_steklu_Hagwert_6mm.aspx" />
+    <Content Include="Sverlo_po_steklu_Hagwert_8mm.aspx" />
+    <Content Include="Sverlo_po_steklu_Hagwert_10mm.aspx" />
+    <Content Include="Sverlo_po_steklu_i_keramike_Hagwert_Quadro_4mm.aspx" />
+    <Content Include="Sverlo_po_steklu_i_keramike_Hagwert_Quadro_5mm.aspx" />
+    <Content Include="Sverlo_po_steklu_i_keramike_Hagwert_Quadro_6mm.aspx" />
+    <Content Include="Sverlo_po_steklu_i_keramike_Hagwert_Quadro_8mm.aspx" />
+    <Content Include="Sverlo_po_steklu_i_keramike_Hagwert_Quadro_10mm.aspx" />
+    <Content Include="Sverlo_po_steklu_i_keramike_Hagwert_Quadro_12mm.aspx" />
+    <Content Include="ZakazOnline.aspx" />
+    <Content Include="Zubilo_po_betonu_40x250mm_SDS_plus_Optim.aspx" />
+    <Content Include="Zubilo_po_betonu_20x250mm_SDS_plus_Optim.aspx" />
+    <Content Include="Zubilo_po_betonu_ploskoe_40x250mm_SDS_plus_Optim.aspx" />
+    <Content Include="Zubilo_po_betonu_22x250mm_SDS_plus_Optim.aspx" />
+    <Content Include="pika_po_betonu_250mm_SDS_plus_Optim.aspx" />
+    <Content Include="Zubilo_po_betonu_20x400mm_SDS_plus_Optim.aspx" />
+    <Content Include="Zubilo_po_betonu_22x400mm_SDS_max_Optim.aspx" />
+    <Content Include="Zubilo_po_betonu_22x600mm_SDS_max_Optim.aspx" />
+    <Content Include="Zubilo_po_betonu_50x400mm_SDS_max_Optim.aspx" />
+    <Content Include="pika_po_betonu_400mm_SDS_max_Optim.aspx" />
+    <Content Include="pika_po_betonu_600mm_SDS_max_Optim.aspx" />
+    <Content Include="Pika_po_betonu_250mm_SDS_plus_RennBohr.aspx" />
+    <Content Include="Zubilo_po_betonu_22x250mm_SDS_plus_RennBohr.aspx" />
+    <Content Include="Zubilo_po_betonu_40x250mm_SDS_plus_RennBohr.aspx" />
+    <Content Include="Pika_po_betonu_250mm_SDS_plus_RennBohr_by_Diager.aspx" />
+    <Content Include="Zubilo_po_betonu_20x250mm_SDS_plus_RennBohr.aspx" />
+    <Content Include="Zubilo_ploskoe_po_betonu_40x250mm_SDS_plus_RennBohr.aspx" />
+    <Content Include="Pika_po_betonu_400mm_SDS_max_RennBohr.aspx" />
+    <Content Include="Pika_po_betonu_600mm_SDS_max_RennBohr_by_Diager.aspx" />
+    <Content Include="Zubilo_po_betonu_25x400mm_SDS_max_RennBohr.aspx" />
+    <Content Include="Zubilo_po_betonu_25x600mm_SDS_max_RennBohr.aspx" />
+    <Content Include="Zubilo_po_betonu_50x400mm_SDS_max_RennBohr.aspx" />
+    <Content Include="Pika_kruglya_po_betonu_250mm_SDS_plus_RennBohr.aspx" />
+    <Content Include="Zubilo_po_betonu_20x250mm_SDS_plus_Hagwert.aspx" />
+    <Content Include="Zubilo_ploskoe_po_betonu_40x250mm_SDS_plus_Hagwert.aspx" />
+    <Content Include="Zubilo_po_betonu_40x250mm_SDS_plus_Hagwert.aspx" />
+    <Content Include="Zubilo_po_betonu_25x250mm_SDS_plus_Hagwert.aspx" />
+    <Content Include="Zubilo_shtrobnik_po_betonu_22x250mm_SDS_plus_Hagwert.aspx" />
+    <Content Include="Pika_kruglya_po_betonu_400mm_SDS_max_RennBohr.aspx" />
+    <Content Include="Zubilo_po_betonu_25x400mm_SDS_max_Hagwert.aspx" />
+    <Content Include="Zubilo_po_betonu_50x400mm_SDS_max_Hagwert.aspx" />
+    <Content Include="Pika_kruglya_po_betonu_600mm_SDS_max_RennBohr.aspx" />
+    <Content Include="Zubilo_po_betonu_25x600mm_SDS_max_Hagwert.aspx" />
+    <Content Include="Stepler_mebelny_4_14_all_be_fix.aspx" />
+    <Content Include="Stepler_mebelny_3in1_Stelgrit.aspx" />
+    <Content Include="Stepler_mebelny_4in1_Stelgrit.aspx" />
+    <Content Include="Stepler_mebelny_4_14_stelgrit.aspx" />
+    <Content Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_6x7.aspx" />
+    <Content Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_8x7.aspx" />
+    <Content Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_10x7.aspx" />
+    <Content Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_12x7.aspx" />
+    <Content Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_14x7.aspx" />
+    <Content Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_6x12.aspx" />
+    <Content Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_8x12.aspx" />
+    <Content Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_10x12.aspx" />
+    <Content Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_12x12.aspx" />
+    <Content Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_14x12.aspx" />
+    <Content Include="SearchDefault.aspx" />
+    <Content Include="Сatalog.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ax.aspx.cs">
+      <DependentUpon>ax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ax.aspx.designer.cs">
+      <DependentUpon>ax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ax_1.aspx.cs">
+      <DependentUpon>ax_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ax_1.aspx.designer.cs">
+      <DependentUpon>ax_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ax_2.aspx.cs">
+      <DependentUpon>ax_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ax_2.aspx.designer.cs">
+      <DependentUpon>ax_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bits.aspx.cs">
+      <DependentUpon>Bits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bits.aspx.designer.cs">
+      <DependentUpon>Bits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bits_1.aspx.cs">
+      <DependentUpon>bits_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bits_1.aspx.designer.cs">
+      <DependentUpon>bits_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bits_2.aspx.cs">
+      <DependentUpon>bits_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bits_2.aspx.designer.cs">
+      <DependentUpon>bits_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bits_3.aspx.cs">
+      <DependentUpon>bits_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bits_3.aspx.designer.cs">
+      <DependentUpon>bits_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bits_4.aspx.cs">
+      <DependentUpon>bits_4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bits_4.aspx.designer.cs">
+      <DependentUpon>bits_4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bits_5.aspx.cs">
+      <DependentUpon>bits_5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bits_5.aspx.designer.cs">
+      <DependentUpon>bits_5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bits_6.aspx.cs">
+      <DependentUpon>bits_6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bits_6.aspx.designer.cs">
+      <DependentUpon>bits_6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blade.aspx.cs">
+      <DependentUpon>Blade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blade.aspx.designer.cs">
+      <DependentUpon>Blade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="blade_1.aspx.cs">
+      <DependentUpon>blade_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blade_1.aspx.designer.cs">
+      <DependentUpon>blade_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="blade_2.aspx.cs">
+      <DependentUpon>blade_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blade_2.aspx.designer.cs">
+      <DependentUpon>blade_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="blade_3.aspx.cs">
+      <DependentUpon>blade_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blade_3.aspx.designer.cs">
+      <DependentUpon>blade_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buy.aspx.cs">
+      <DependentUpon>Buy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buy.aspx.designer.cs">
+      <DependentUpon>Buy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buyOK.aspx.cs">
+      <DependentUpon>buyOK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buyOK.aspx.designer.cs">
+      <DependentUpon>buyOK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buy_bits_Nox_6x48.aspx.cs">
+      <DependentUpon>buy_bits_Nox_6x48.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buy_bits_Nox_6x48.aspx.designer.cs">
+      <DependentUpon>buy_bits_Nox_6x48.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buy_Error.aspx.cs">
+      <DependentUpon>buy_Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buy_Error.aspx.designer.cs">
+      <DependentUpon>buy_Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="callMe.aspx.cs">
+      <DependentUpon>callMe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="callMe.aspx.designer.cs">
+      <DependentUpon>callMe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Circle.aspx.cs">
+      <DependentUpon>Circle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Circle.aspx.designer.cs">
+      <DependentUpon>Circle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="circle_1.aspx.cs">
+      <DependentUpon>circle_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="circle_1.aspx.designer.cs">
+      <DependentUpon>circle_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="circle_2.aspx.cs">
+      <DependentUpon>circle_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="circle_2.aspx.designer.cs">
+      <DependentUpon>circle_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="circle_3.aspx.cs">
+      <DependentUpon>circle_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="circle_3.aspx.designer.cs">
+      <DependentUpon>circle_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="circle_4.aspx.cs">
+      <DependentUpon>circle_4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="circle_4.aspx.designer.cs">
+      <DependentUpon>circle_4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collet.aspx.cs">
+      <DependentUpon>Collet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collet.aspx.designer.cs">
+      <DependentUpon>Collet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="collet_1.aspx.cs">
+      <DependentUpon>collet_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="collet_1.aspx.designer.cs">
+      <DependentUpon>collet_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="collet_2.aspx.cs">
+      <DependentUpon>collet_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="collet_2.aspx.designer.cs">
+      <DependentUpon>collet_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contacts.aspx.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contacts.aspx.designer.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Diamond.aspx.cs">
+      <DependentUpon>Diamond.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Diamond.aspx.designer.cs">
+      <DependentUpon>Diamond.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="diamond_disc.aspx.cs">
+      <DependentUpon>diamond_disc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="diamond_disc.aspx.designer.cs">
+      <DependentUpon>diamond_disc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drill.aspx.cs">
+      <DependentUpon>drill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drill.aspx.designer.cs">
+      <DependentUpon>drill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Drills.aspx.cs">
+      <DependentUpon>Drills.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Drills.aspx.designer.cs">
+      <DependentUpon>Drills.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drills_1.aspx.cs">
+      <DependentUpon>drills_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drills_1.aspx.designer.cs">
+      <DependentUpon>drills_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drills_10.aspx.cs">
+      <DependentUpon>drills_10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drills_10.aspx.designer.cs">
+      <DependentUpon>drills_10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drills_11.aspx.cs">
+      <DependentUpon>drills_11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drills_11.aspx.designer.cs">
+      <DependentUpon>drills_11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drills_12.aspx.cs">
+      <DependentUpon>drills_12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drills_12.aspx.designer.cs">
+      <DependentUpon>drills_12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drills_13.aspx.cs">
+      <DependentUpon>drills_13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drills_13.aspx.designer.cs">
+      <DependentUpon>drills_13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drills_14.aspx.cs">
+      <DependentUpon>drills_14.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drills_14.aspx.designer.cs">
+      <DependentUpon>drills_14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drills_15.aspx.cs">
+      <DependentUpon>drills_15.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drills_15.aspx.designer.cs">
+      <DependentUpon>drills_15.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drills_16.aspx.cs">
+      <DependentUpon>drills_16.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drills_16.aspx.designer.cs">
+      <DependentUpon>drills_16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drills_17.aspx.cs">
+      <DependentUpon>drills_17.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drills_17.aspx.designer.cs">
+      <DependentUpon>drills_17.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drills_18.aspx.cs">
+      <DependentUpon>drills_18.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drills_18.aspx.designer.cs">
+      <DependentUpon>drills_18.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drills_2.aspx.cs">
+      <DependentUpon>drills_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drills_2.aspx.designer.cs">
+      <DependentUpon>drills_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drills_3.aspx.cs">
+      <DependentUpon>drills_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drills_3.aspx.designer.cs">
+      <DependentUpon>drills_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drills_4.aspx.cs">
+      <DependentUpon>drills_4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drills_4.aspx.designer.cs">
+      <DependentUpon>drills_4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drills_5.aspx.cs">
+      <DependentUpon>drills_5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drills_5.aspx.designer.cs">
+      <DependentUpon>drills_5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drills_6.aspx.cs">
+      <DependentUpon>drills_6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drills_6.aspx.designer.cs">
+      <DependentUpon>drills_6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drills_7.aspx.cs">
+      <DependentUpon>drills_7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drills_7.aspx.designer.cs">
+      <DependentUpon>drills_7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drills_8.aspx.cs">
+      <DependentUpon>drills_8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drills_8.aspx.designer.cs">
+      <DependentUpon>drills_8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drills_9.aspx.cs">
+      <DependentUpon>drills_9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drills_9.aspx.designer.cs">
+      <DependentUpon>drills_9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drill_1.aspx.cs">
+      <DependentUpon>drill_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drill_1.aspx.designer.cs">
+      <DependentUpon>drill_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drill_2.aspx.cs">
+      <DependentUpon>drill_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drill_2.aspx.designer.cs">
+      <DependentUpon>drill_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drill_3.aspx.cs">
+      <DependentUpon>drill_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drill_3.aspx.designer.cs">
+      <DependentUpon>drill_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fasteners.aspx.cs">
+      <DependentUpon>Fasteners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fasteners.aspx.designer.cs">
+      <DependentUpon>Fasteners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fasteners_1.aspx.cs">
+      <DependentUpon>fasteners_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fasteners_1.aspx.designer.cs">
+      <DependentUpon>fasteners_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fasteners_2.aspx.cs">
+      <DependentUpon>fasteners_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fasteners_2.aspx.designer.cs">
+      <DependentUpon>fasteners_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fasteners_3.aspx.cs">
+      <DependentUpon>fasteners_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fasteners_3.aspx.designer.cs">
+      <DependentUpon>fasteners_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fasteners_4.aspx.cs">
+      <DependentUpon>fasteners_4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fasteners_4.aspx.designer.cs">
+      <DependentUpon>fasteners_4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fasteners_5.aspx.cs">
+      <DependentUpon>fasteners_5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fasteners_5.aspx.designer.cs">
+      <DependentUpon>fasteners_5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fastening_tool.aspx.cs">
+      <DependentUpon>Fastening_tool.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fastening_tool.aspx.designer.cs">
+      <DependentUpon>Fastening_tool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fastening_tool_1.aspx.cs">
+      <DependentUpon>fastening_tool_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fastening_tool_1.aspx.designer.cs">
+      <DependentUpon>fastening_tool_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fastening_tool_2.aspx.cs">
+      <DependentUpon>fastening_tool_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fastening_tool_2.aspx.designer.cs">
+      <DependentUpon>fastening_tool_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fastening_tool_3.aspx.cs">
+      <DependentUpon>fastening_tool_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fastening_tool_3.aspx.designer.cs">
+      <DependentUpon>fastening_tool_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Gun.aspx.cs">
+      <DependentUpon>Gun.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gun.aspx.designer.cs">
+      <DependentUpon>Gun.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gun_1.aspx.cs">
+      <DependentUpon>gun_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gun_1.aspx.designer.cs">
+      <DependentUpon>gun_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gun_2.aspx.cs">
+      <DependentUpon>gun_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gun_2.aspx.designer.cs">
+      <DependentUpon>gun_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hacksaw.aspx.cs">
+      <DependentUpon>Hacksaw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hacksaw.aspx.designer.cs">
+      <DependentUpon>Hacksaw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hacksaw_1.aspx.cs">
+      <DependentUpon>hacksaw_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hacksaw_1.aspx.designer.cs">
+      <DependentUpon>hacksaw_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Measuring_tool.aspx.cs">
+      <DependentUpon>Measuring_tool.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Measuring_tool.aspx.designer.cs">
+      <DependentUpon>Measuring_tool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="measuring_tool_1.aspx.cs">
+      <DependentUpon>measuring_tool_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="measuring_tool_1.aspx.designer.cs">
+      <DependentUpon>measuring_tool_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="measuring_tool_2.aspx.cs">
+      <DependentUpon>measuring_tool_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="measuring_tool_2.aspx.designer.cs">
+      <DependentUpon>measuring_tool_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Painting_tools.aspx.cs">
+      <DependentUpon>Painting_tools.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Painting_tools.aspx.designer.cs">
+      <DependentUpon>Painting_tools.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="painting_tools_1.aspx.cs">
+      <DependentUpon>painting_tools_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="painting_tools_1.aspx.designer.cs">
+      <DependentUpon>painting_tools_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="painting_tools_2.aspx.cs">
+      <DependentUpon>painting_tools_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="painting_tools_2.aspx.designer.cs">
+      <DependentUpon>painting_tools_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="poisk_instrumenta.aspx.cs">
+      <DependentUpon>poisk_instrumenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="poisk_instrumenta.aspx.designer.cs">
+      <DependentUpon>poisk_instrumenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sawing.aspx.cs">
+      <DependentUpon>Sawing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sawing.aspx.designer.cs">
+      <DependentUpon>Sawing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sawing_1.aspx.cs">
+      <DependentUpon>sawing_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sawing_1.aspx.designer.cs">
+      <DependentUpon>sawing_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sawing_2.aspx.cs">
+      <DependentUpon>sawing_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sawing_2.aspx.designer.cs">
+      <DependentUpon>sawing_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Section.Master.cs">
+      <DependentUpon>Section.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Section.Master.designer.cs">
+      <DependentUpon>Section.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Small_tool.aspx.cs">
+      <DependentUpon>Small_tool.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Small_tool.aspx.designer.cs">
+      <DependentUpon>Small_tool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="small_tool_12.aspx.cs">
+      <DependentUpon>small_tool_12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="small_tool_12.aspx.designer.cs">
+      <DependentUpon>small_tool_12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="small_tool_1.aspx.cs">
+      <DependentUpon>small_tool_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="small_tool_1.aspx.designer.cs">
+      <DependentUpon>small_tool_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="small_tool_10.aspx.cs">
+      <DependentUpon>small_tool_10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="small_tool_10.aspx.designer.cs">
+      <DependentUpon>small_tool_10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="small_tool_11.aspx.cs">
+      <DependentUpon>small_tool_11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="small_tool_11.aspx.designer.cs">
+      <DependentUpon>small_tool_11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="small_tool_2.aspx.cs">
+      <DependentUpon>small_tool_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="small_tool_2.aspx.designer.cs">
+      <DependentUpon>small_tool_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="small_tool_3.aspx.cs">
+      <DependentUpon>small_tool_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="small_tool_3.aspx.designer.cs">
+      <DependentUpon>small_tool_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="small_tool_4.aspx.cs">
+      <DependentUpon>small_tool_4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="small_tool_4.aspx.designer.cs">
+      <DependentUpon>small_tool_4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="small_tool_5.aspx.cs">
+      <DependentUpon>small_tool_5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="small_tool_5.aspx.designer.cs">
+      <DependentUpon>small_tool_5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="small_tool_6.aspx.cs">
+      <DependentUpon>small_tool_6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="small_tool_6.aspx.designer.cs">
+      <DependentUpon>small_tool_6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="small_tool_7.aspx.cs">
+      <DependentUpon>small_tool_7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="small_tool_7.aspx.designer.cs">
+      <DependentUpon>small_tool_7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="small_tool_8.aspx.cs">
+      <DependentUpon>small_tool_8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="small_tool_8.aspx.designer.cs">
+      <DependentUpon>small_tool_8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="small_tool_9.aspx.cs">
+      <DependentUpon>small_tool_9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="small_tool_9.aspx.designer.cs">
+      <DependentUpon>small_tool_9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Spades.aspx.cs">
+      <DependentUpon>Spades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Spades.aspx.designer.cs">
+      <DependentUpon>Spades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="spades_1.aspx.cs">
+      <DependentUpon>spades_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="spades_1.aspx.designer.cs">
+      <DependentUpon>spades_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="spades_2.aspx.cs">
+      <DependentUpon>spades_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="spades_2.aspx.designer.cs">
+      <DependentUpon>spades_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="stands_1.aspx.cs">
+      <DependentUpon>stands_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="stands_1.aspx.designer.cs">
+      <DependentUpon>stands_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock.aspx.cs">
+      <DependentUpon>Stock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock.aspx.designer.cs">
+      <DependentUpon>Stock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buy_gun_foam_fomeron_clean.aspx.cs">
+      <DependentUpon>buy_gun_foam_fomeron_clean.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buy_gun_foam_fomeron_clean.aspx.designer.cs">
+      <DependentUpon>buy_gun_foam_fomeron_clean.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buy_gun_foam_Fomeron_Classic.aspx.cs">
+      <DependentUpon>buy_gun_foam_Fomeron_Classic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buy_gun_foam_Fomeron_Classic.aspx.designer.cs">
+      <DependentUpon>buy_gun_foam_Fomeron_Classic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buy_gun_foam_Fomeron_Top.aspx.cs">
+      <DependentUpon>buy_gun_foam_Fomeron_Top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buy_gun_foam_Fomeron_Top.aspx.designer.cs">
+      <DependentUpon>buy_gun_foam_Fomeron_Top.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buy_gun_foam_Blast_Hard.aspx.cs">
+      <DependentUpon>buy_gun_foam_Blast_Hard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buy_gun_foam_Blast_Hard.aspx.designer.cs">
+      <DependentUpon>buy_gun_foam_Blast_Hard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buy_gun_foam_Blast_Lite.aspx.cs">
+      <DependentUpon>buy_gun_foam_Blast_Lite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buy_gun_foam_Blast_Lite.aspx.designer.cs">
+      <DependentUpon>buy_gun_foam_Blast_Lite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buy_gun_foam_Blast.aspx.cs">
+      <DependentUpon>buy_gun_foam_Blast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buy_gun_foam_Blast.aspx.designer.cs">
+      <DependentUpon>buy_gun_foam_Blast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buy_gun_sealant_Caulker_Blast.aspx.cs">
+      <DependentUpon>buy_gun_sealant_Caulker_Blast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buy_gun_sealant_Caulker_Blast.aspx.designer.cs">
+      <DependentUpon>buy_gun_sealant_Caulker_Blast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buy_gun_sealant_no_drop_Blast.aspx.cs">
+      <DependentUpon>buy_gun_sealant_no_drop_Blast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buy_gun_sealant_no_drop_Blast.aspx.designer.cs">
+      <DependentUpon>buy_gun_sealant_no_drop_Blast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buy_gun_sealant_pressor_Blast.aspx.cs">
+      <DependentUpon>buy_gun_sealant_pressor_Blast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buy_gun_sealant_pressor_Blast.aspx.designer.cs">
+      <DependentUpon>buy_gun_sealant_pressor_Blast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buy_gun_sealant_tube_Blast.aspx.cs">
+      <DependentUpon>buy_gun_sealant_tube_Blast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buy_gun_sealant_tube_Blast.aspx.designer.cs">
+      <DependentUpon>buy_gun_sealant_tube_Blast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buy_gun_sealant_tube_long_Blast.aspx.cs">
+      <DependentUpon>buy_gun_sealant_tube_long_Blast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buy_gun_sealant_tube_long_Blast.aspx.designer.cs">
+      <DependentUpon>buy_gun_sealant_tube_long_Blast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_keramike_hagwert_115.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_keramike_hagwert_115.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_keramike_hagwert_115.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_keramike_hagwert_115.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_keramike_hagwert_125.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_keramike_hagwert_125.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_keramike_hagwert_125.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_keramike_hagwert_125.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_keramike_hagwert_150.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_keramike_hagwert_150.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_keramike_hagwert_150.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_keramike_hagwert_150.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_keramike_hagwert_180.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_keramike_hagwert_180.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_keramike_hagwert_180.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_keramike_hagwert_180.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_keramike_hagwert_200.aspx.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_keramike_hagwert_200.aspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_keramike_hagwert_200.aspx.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_keramike_hagwert_200.aspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_keramike_hagwert_230.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_keramike_hagwert_230.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_keramike_hagwert_230.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_keramike_hagwert_230.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_115.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_115.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_115.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_115.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_125.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_125.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_125.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_125.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_150.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_150.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_150.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_150.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_180.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_180.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_180.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_180.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_230.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_230.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_230.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_230.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_115.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_115.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_115.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_115.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_125.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_125.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_125.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_125.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_150.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_150.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_150.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_150.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_180.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_180.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_180.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_180.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_230.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_230.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_230.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_super_230.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_115.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_115.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_115.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_115.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_125.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_125.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_125.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_125.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_150.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_150.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_150.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_150.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_180.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_180.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_180.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_180.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_230.aspx.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_230.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_230.aspx.designer.cs">
+      <DependentUpon>disk_otreznoy_almaznyj_po_kamnyu_hagwert_turbo_230.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_4x110mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_4x110mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_4x110mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_4x110mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_5x110mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_5x110mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_5x110mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_5x110mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_5x160mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_5x160mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_5x160mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_5x160mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_5x210mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_5x210mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_5x210mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_5x210mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_6x110mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_6x110mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_6x110mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_6x110mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_6x160mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_6x160mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_6x160mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_6x160mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_6x210mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_6x210mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_6x210mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_6x210mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_8x110mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_8x110mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_8x110mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_8x110mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_8x160mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_8x160mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_8x160mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_8x160mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_8x210mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_8x210mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_8x210mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_8x210mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_8x260mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_8x260mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_8x260mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_8x260mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_8x310mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_8x310mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_8x310mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_8x310mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_8x350mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_8x350mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_8x350mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_8x350mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_8x460mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_8x460mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_8x460mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_8x460mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_8x600mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_8x600mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_8x600mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_8x600mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x1000mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x1000mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x1000mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x1000mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x110mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x110mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x110mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x110mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x160mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x160mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x160mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x160mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x210mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x210mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x210mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x210mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x260mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x260mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x260mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x260mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x310mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x310mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x310mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x310mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x350mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x350mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x350mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x350mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x460mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x460mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x460mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x460mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x600mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x600mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x600mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x600mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x800mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x800mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_10x800mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_10x800mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_12x1000mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_12x1000mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_12x1000mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_12x1000mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_12x160mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_12x160mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_12x160mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_12x160mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_12x210mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_12x210mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_12x210mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_12x210mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_12x260mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_12x260mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_12x260mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_12x260mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_12x310mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_12x310mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_12x310mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_12x310mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_12x350mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_12x350mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_12x350mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_12x350mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_12x460mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_12x460mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_12x460mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_12x460mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_12x600mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_12x600mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_12x600mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_12x600mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_12x800mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_12x800mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_12x800mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_12x800mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_14x1000mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_14x1000mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_14x1000mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_14x1000mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_14x210mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_14x210mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_14x210mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_14x210mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_14x260mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_14x260mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_14x260mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_14x260mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_14x310mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_14x310mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_14x310mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_14x310mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_14x460mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_14x460mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_14x460mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_14x460mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_14x600mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_14x600mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_14x600mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_14x600mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_14x800mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_14x800mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_14x800mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_14x800mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_16x1000mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_16x1000mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_16x1000mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_16x1000mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_16x210mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_16x210mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_16x210mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_16x210mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_16x310mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_16x310mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_16x310mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_16x310mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_16x460mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_16x460mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_16x460mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_16x460mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_16x600mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_16x600mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_16x600mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_16x600mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_16x800mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_16x800mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_16x800mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_16x800mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_18x1000mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_18x1000mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_18x1000mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_18x1000mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_18x310mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_18x310mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_18x310mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_18x310mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_18x460mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_18x460mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_18x460mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_18x460mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_18x600mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_18x600mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_18x600mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_18x600mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_18x800mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_18x800mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_18x800mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_18x800mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_20x1000mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_20x1000mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_20x1000mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_20x1000mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_20x310mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_20x310mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_20x310mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_20x310mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_20x460mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_20x460mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_20x460mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_20x460mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_20x600mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_20x600mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_20x600mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_20x600mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_20x800mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_20x800mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_20x800mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_20x800mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_22x1000mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_22x1000mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_22x1000mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_22x1000mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_22x460mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_22x460mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_22x460mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_22x460mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_22x600mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_22x600mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_22x600mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_22x600mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_22x800mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_22x800mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_22x800mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_22x800mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_24x1000mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_24x1000mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_24x1000mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_24x1000mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_24x800mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_24x800mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_24x800mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_24x800mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_25x1000mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_25x1000mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_25x1000mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_25x1000mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_25x800mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_25x800mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_25x800mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_25x800mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_6x260mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_6x260mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_6x260mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_6x260mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_6_5x210mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_6_5x210mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_6_5x210mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_6_5x210mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_6_5x260mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_6_5x260mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_6_5x260mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_6_5x260mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_6_5x310mm.aspx.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_6_5x310mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sverlo_bur_po_betonu_hagwert_SDS_6_5x310mm.aspx.designer.cs">
+      <DependentUpon>sverlo_bur_po_betonu_hagwert_SDS_6_5x310mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nabor_sverl_bur_po_betonu_hagwert_SDS_5_10x110_160mm.aspx.cs">
+      <DependentUpon>nabor_sverl_bur_po_betonu_hagwert_SDS_5_10x110_160mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nabor_sverl_bur_po_betonu_hagwert_SDS_5_10x110_160mm.aspx.designer.cs">
+      <DependentUpon>nabor_sverl_bur_po_betonu_hagwert_SDS_5_10x110_160mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nabor_sverl_bur_po_betonu_hagwert_SDS_6_10x110_160mm.aspx.cs">
+      <DependentUpon>nabor_sverl_bur_po_betonu_hagwert_SDS_6_10x110_160mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nabor_sverl_bur_po_betonu_hagwert_SDS_6_10x110_160mm.aspx.designer.cs">
+      <DependentUpon>nabor_sverl_bur_po_betonu_hagwert_SDS_6_10x110_160mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_Hagwert_4mm.aspx.cs">
+      <DependentUpon>Sverlo_po_steklu_Hagwert_4mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_Hagwert_4mm.aspx.designer.cs">
+      <DependentUpon>Sverlo_po_steklu_Hagwert_4mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_Hagwert_5mm.aspx.cs">
+      <DependentUpon>Sverlo_po_steklu_Hagwert_5mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_Hagwert_5mm.aspx.designer.cs">
+      <DependentUpon>Sverlo_po_steklu_Hagwert_5mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_Hagwert_6mm.aspx.cs">
+      <DependentUpon>Sverlo_po_steklu_Hagwert_6mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_Hagwert_6mm.aspx.designer.cs">
+      <DependentUpon>Sverlo_po_steklu_Hagwert_6mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_Hagwert_8mm.aspx.cs">
+      <DependentUpon>Sverlo_po_steklu_Hagwert_8mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_Hagwert_8mm.aspx.designer.cs">
+      <DependentUpon>Sverlo_po_steklu_Hagwert_8mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_Hagwert_10mm.aspx.cs">
+      <DependentUpon>Sverlo_po_steklu_Hagwert_10mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_Hagwert_10mm.aspx.designer.cs">
+      <DependentUpon>Sverlo_po_steklu_Hagwert_10mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_i_keramike_Hagwert_Quadro_4mm.aspx.cs">
+      <DependentUpon>Sverlo_po_steklu_i_keramike_Hagwert_Quadro_4mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_i_keramike_Hagwert_Quadro_4mm.aspx.designer.cs">
+      <DependentUpon>Sverlo_po_steklu_i_keramike_Hagwert_Quadro_4mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_i_keramike_Hagwert_Quadro_5mm.aspx.cs">
+      <DependentUpon>Sverlo_po_steklu_i_keramike_Hagwert_Quadro_5mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_i_keramike_Hagwert_Quadro_5mm.aspx.designer.cs">
+      <DependentUpon>Sverlo_po_steklu_i_keramike_Hagwert_Quadro_5mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_i_keramike_Hagwert_Quadro_6mm.aspx.cs">
+      <DependentUpon>Sverlo_po_steklu_i_keramike_Hagwert_Quadro_6mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_i_keramike_Hagwert_Quadro_6mm.aspx.designer.cs">
+      <DependentUpon>Sverlo_po_steklu_i_keramike_Hagwert_Quadro_6mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_i_keramike_Hagwert_Quadro_8mm.aspx.cs">
+      <DependentUpon>Sverlo_po_steklu_i_keramike_Hagwert_Quadro_8mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_i_keramike_Hagwert_Quadro_8mm.aspx.designer.cs">
+      <DependentUpon>Sverlo_po_steklu_i_keramike_Hagwert_Quadro_8mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_i_keramike_Hagwert_Quadro_10mm.aspx.cs">
+      <DependentUpon>Sverlo_po_steklu_i_keramike_Hagwert_Quadro_10mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_i_keramike_Hagwert_Quadro_10mm.aspx.designer.cs">
+      <DependentUpon>Sverlo_po_steklu_i_keramike_Hagwert_Quadro_10mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_i_keramike_Hagwert_Quadro_12mm.aspx.cs">
+      <DependentUpon>Sverlo_po_steklu_i_keramike_Hagwert_Quadro_12mm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sverlo_po_steklu_i_keramike_Hagwert_Quadro_12mm.aspx.designer.cs">
+      <DependentUpon>Sverlo_po_steklu_i_keramike_Hagwert_Quadro_12mm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZakazOnline.aspx.cs">
+      <DependentUpon>ZakazOnline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ZakazOnline.aspx.designer.cs">
+      <DependentUpon>ZakazOnline.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_40x250mm_SDS_plus_Optim.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_40x250mm_SDS_plus_Optim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_40x250mm_SDS_plus_Optim.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_40x250mm_SDS_plus_Optim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_20x250mm_SDS_plus_Optim.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_20x250mm_SDS_plus_Optim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_20x250mm_SDS_plus_Optim.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_20x250mm_SDS_plus_Optim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_ploskoe_40x250mm_SDS_plus_Optim.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_ploskoe_40x250mm_SDS_plus_Optim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_ploskoe_40x250mm_SDS_plus_Optim.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_ploskoe_40x250mm_SDS_plus_Optim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_22x250mm_SDS_plus_Optim.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_22x250mm_SDS_plus_Optim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_22x250mm_SDS_plus_Optim.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_22x250mm_SDS_plus_Optim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pika_po_betonu_250mm_SDS_plus_Optim.aspx.cs">
+      <DependentUpon>pika_po_betonu_250mm_SDS_plus_Optim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pika_po_betonu_250mm_SDS_plus_Optim.aspx.designer.cs">
+      <DependentUpon>pika_po_betonu_250mm_SDS_plus_Optim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_20x400mm_SDS_plus_Optim.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_20x400mm_SDS_plus_Optim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_20x400mm_SDS_plus_Optim.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_20x400mm_SDS_plus_Optim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_22x400mm_SDS_max_Optim.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_22x400mm_SDS_max_Optim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_22x400mm_SDS_max_Optim.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_22x400mm_SDS_max_Optim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_22x600mm_SDS_max_Optim.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_22x600mm_SDS_max_Optim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_22x600mm_SDS_max_Optim.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_22x600mm_SDS_max_Optim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_50x400mm_SDS_max_Optim.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_50x400mm_SDS_max_Optim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_50x400mm_SDS_max_Optim.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_50x400mm_SDS_max_Optim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pika_po_betonu_400mm_SDS_max_Optim.aspx.cs">
+      <DependentUpon>pika_po_betonu_400mm_SDS_max_Optim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pika_po_betonu_400mm_SDS_max_Optim.aspx.designer.cs">
+      <DependentUpon>pika_po_betonu_400mm_SDS_max_Optim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pika_po_betonu_600mm_SDS_max_Optim.aspx.cs">
+      <DependentUpon>pika_po_betonu_600mm_SDS_max_Optim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pika_po_betonu_600mm_SDS_max_Optim.aspx.designer.cs">
+      <DependentUpon>pika_po_betonu_600mm_SDS_max_Optim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pika_po_betonu_250mm_SDS_plus_RennBohr.aspx.cs">
+      <DependentUpon>Pika_po_betonu_250mm_SDS_plus_RennBohr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pika_po_betonu_250mm_SDS_plus_RennBohr.aspx.designer.cs">
+      <DependentUpon>Pika_po_betonu_250mm_SDS_plus_RennBohr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_22x250mm_SDS_plus_RennBohr.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_22x250mm_SDS_plus_RennBohr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_22x250mm_SDS_plus_RennBohr.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_22x250mm_SDS_plus_RennBohr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_40x250mm_SDS_plus_RennBohr.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_40x250mm_SDS_plus_RennBohr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_40x250mm_SDS_plus_RennBohr.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_40x250mm_SDS_plus_RennBohr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pika_po_betonu_250mm_SDS_plus_RennBohr_by_Diager.aspx.cs">
+      <DependentUpon>Pika_po_betonu_250mm_SDS_plus_RennBohr_by_Diager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pika_po_betonu_250mm_SDS_plus_RennBohr_by_Diager.aspx.designer.cs">
+      <DependentUpon>Pika_po_betonu_250mm_SDS_plus_RennBohr_by_Diager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_20x250mm_SDS_plus_RennBohr.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_20x250mm_SDS_plus_RennBohr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_20x250mm_SDS_plus_RennBohr.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_20x250mm_SDS_plus_RennBohr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_ploskoe_po_betonu_40x250mm_SDS_plus_RennBohr.aspx.cs">
+      <DependentUpon>Zubilo_ploskoe_po_betonu_40x250mm_SDS_plus_RennBohr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_ploskoe_po_betonu_40x250mm_SDS_plus_RennBohr.aspx.designer.cs">
+      <DependentUpon>Zubilo_ploskoe_po_betonu_40x250mm_SDS_plus_RennBohr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pika_po_betonu_400mm_SDS_max_RennBohr.aspx.cs">
+      <DependentUpon>Pika_po_betonu_400mm_SDS_max_RennBohr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pika_po_betonu_400mm_SDS_max_RennBohr.aspx.designer.cs">
+      <DependentUpon>Pika_po_betonu_400mm_SDS_max_RennBohr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pika_po_betonu_600mm_SDS_max_RennBohr_by_Diager.aspx.cs">
+      <DependentUpon>Pika_po_betonu_600mm_SDS_max_RennBohr_by_Diager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pika_po_betonu_600mm_SDS_max_RennBohr_by_Diager.aspx.designer.cs">
+      <DependentUpon>Pika_po_betonu_600mm_SDS_max_RennBohr_by_Diager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_25x400mm_SDS_max_RennBohr.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_25x400mm_SDS_max_RennBohr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_25x400mm_SDS_max_RennBohr.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_25x400mm_SDS_max_RennBohr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_25x600mm_SDS_max_RennBohr.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_25x600mm_SDS_max_RennBohr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_25x600mm_SDS_max_RennBohr.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_25x600mm_SDS_max_RennBohr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_50x400mm_SDS_max_RennBohr.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_50x400mm_SDS_max_RennBohr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_50x400mm_SDS_max_RennBohr.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_50x400mm_SDS_max_RennBohr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pika_kruglya_po_betonu_250mm_SDS_plus_RennBohr.aspx.cs">
+      <DependentUpon>Pika_kruglya_po_betonu_250mm_SDS_plus_RennBohr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pika_kruglya_po_betonu_250mm_SDS_plus_RennBohr.aspx.designer.cs">
+      <DependentUpon>Pika_kruglya_po_betonu_250mm_SDS_plus_RennBohr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_20x250mm_SDS_plus_Hagwert.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_20x250mm_SDS_plus_Hagwert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_20x250mm_SDS_plus_Hagwert.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_20x250mm_SDS_plus_Hagwert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_ploskoe_po_betonu_40x250mm_SDS_plus_Hagwert.aspx.cs">
+      <DependentUpon>Zubilo_ploskoe_po_betonu_40x250mm_SDS_plus_Hagwert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_ploskoe_po_betonu_40x250mm_SDS_plus_Hagwert.aspx.designer.cs">
+      <DependentUpon>Zubilo_ploskoe_po_betonu_40x250mm_SDS_plus_Hagwert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_40x250mm_SDS_plus_Hagwert.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_40x250mm_SDS_plus_Hagwert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_40x250mm_SDS_plus_Hagwert.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_40x250mm_SDS_plus_Hagwert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_25x250mm_SDS_plus_Hagwert.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_25x250mm_SDS_plus_Hagwert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_25x250mm_SDS_plus_Hagwert.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_25x250mm_SDS_plus_Hagwert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_shtrobnik_po_betonu_22x250mm_SDS_plus_Hagwert.aspx.cs">
+      <DependentUpon>Zubilo_shtrobnik_po_betonu_22x250mm_SDS_plus_Hagwert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_shtrobnik_po_betonu_22x250mm_SDS_plus_Hagwert.aspx.designer.cs">
+      <DependentUpon>Zubilo_shtrobnik_po_betonu_22x250mm_SDS_plus_Hagwert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pika_kruglya_po_betonu_400mm_SDS_max_RennBohr.aspx.cs">
+      <DependentUpon>Pika_kruglya_po_betonu_400mm_SDS_max_RennBohr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pika_kruglya_po_betonu_400mm_SDS_max_RennBohr.aspx.designer.cs">
+      <DependentUpon>Pika_kruglya_po_betonu_400mm_SDS_max_RennBohr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_25x400mm_SDS_max_Hagwert.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_25x400mm_SDS_max_Hagwert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_25x400mm_SDS_max_Hagwert.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_25x400mm_SDS_max_Hagwert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_50x400mm_SDS_max_Hagwert.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_50x400mm_SDS_max_Hagwert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_50x400mm_SDS_max_Hagwert.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_50x400mm_SDS_max_Hagwert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pika_kruglya_po_betonu_600mm_SDS_max_RennBohr.aspx.cs">
+      <DependentUpon>Pika_kruglya_po_betonu_600mm_SDS_max_RennBohr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pika_kruglya_po_betonu_600mm_SDS_max_RennBohr.aspx.designer.cs">
+      <DependentUpon>Pika_kruglya_po_betonu_600mm_SDS_max_RennBohr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_25x600mm_SDS_max_Hagwert.aspx.cs">
+      <DependentUpon>Zubilo_po_betonu_25x600mm_SDS_max_Hagwert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zubilo_po_betonu_25x600mm_SDS_max_Hagwert.aspx.designer.cs">
+      <DependentUpon>Zubilo_po_betonu_25x600mm_SDS_max_Hagwert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stepler_mebelny_4_14_all_be_fix.aspx.cs">
+      <DependentUpon>Stepler_mebelny_4_14_all_be_fix.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stepler_mebelny_4_14_all_be_fix.aspx.designer.cs">
+      <DependentUpon>Stepler_mebelny_4_14_all_be_fix.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stepler_mebelny_3in1_Stelgrit.aspx.cs">
+      <DependentUpon>Stepler_mebelny_3in1_Stelgrit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stepler_mebelny_3in1_Stelgrit.aspx.designer.cs">
+      <DependentUpon>Stepler_mebelny_3in1_Stelgrit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stepler_mebelny_4in1_Stelgrit.aspx.cs">
+      <DependentUpon>Stepler_mebelny_4in1_Stelgrit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stepler_mebelny_4in1_Stelgrit.aspx.designer.cs">
+      <DependentUpon>Stepler_mebelny_4in1_Stelgrit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stepler_mebelny_4_14_stelgrit.aspx.cs">
+      <DependentUpon>Stepler_mebelny_4_14_stelgrit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stepler_mebelny_4_14_stelgrit.aspx.designer.cs">
+      <DependentUpon>Stepler_mebelny_4_14_stelgrit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_6x7.aspx.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_6x7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_6x7.aspx.designer.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_6x7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_8x7.aspx.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_8x7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_8x7.aspx.designer.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_8x7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_10x7.aspx.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_10x7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_10x7.aspx.designer.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_10x7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_12x7.aspx.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_12x7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_12x7.aspx.designer.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_12x7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_14x7.aspx.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_14x7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_14x7.aspx.designer.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_14x7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_6x12.aspx.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_6x12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_6x12.aspx.designer.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_6x12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_8x12.aspx.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_8x12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_8x12.aspx.designer.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_8x12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_10x12.aspx.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_10x12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_10x12.aspx.designer.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_10x12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_12x12.aspx.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_12x12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_12x12.aspx.designer.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_12x12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_14x12.aspx.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_14x12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ckoby_dlya_mebelnogo_steplera_Stelgrit_14x12.aspx.designer.cs">
+      <DependentUpon>Ckoby_dlya_mebelnogo_steplera_Stelgrit_14x12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDefault.aspx.cs">
+      <DependentUpon>SearchDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchDefault.aspx.designer.cs">
+      <DependentUpon>SearchDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Сatalog.aspx.cs">
+      <DependentUpon>Сatalog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Сatalog.aspx.designer.cs">
+      <DependentUpon>Сatalog.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Section.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bxslider\bower.json" />
+    <None Include="downloads\price\price_2014.xlsx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54061</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

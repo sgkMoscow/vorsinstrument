@@ -1,0 +1,8 @@
+User-agent: Yandex
+Sitemap: http://vorsinstrument.ru/sitemap.xml
+Host: vorsinstrument.ru
+
+User-agent: *
+Sitemap: http://vorsinstrument.ru/sitemap.xml
+
+Disallow: /Error.aspx

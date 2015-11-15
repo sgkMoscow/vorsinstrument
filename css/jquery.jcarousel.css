@@ -1,0 +1,270 @@
+﻿.oneSlide .jcarousel-container {
+	width:406px;
+}
+
+.twoSlide .jcarousel-container {
+	width:652px;
+}
+
+.extraProduct.inBasket .oneSlide .jcarousel-container {
+	width:271px;
+}
+
+.extraProduct.inBasket .twoSlide .jcarousel-container {
+	width:493px;
+}
+
+.jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+/*.jcarousel-container-horizontal {
+    width: 960px;
+}
+
+.sixItem .jcarousel-container-horizontal {
+    width: 841px;
+}*/
+
+.jcarousel-container-vertical {
+    width: 75px;
+    height: 245px;
+    padding: 40px 20px;
+}
+
+.jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-clip-horizontal {
+    width:909px;
+	border-left:25px solid #f1f3f3;
+	border-right:25px solid #f1f3f3;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	margin:0;
+	padding:10px 0;
+}
+
+.extraProduct .jcarousel-clip-horizontal {
+	border:1px solid #dedede;
+    width:737px;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+	margin:0 80px 0 79px;
+	padding:0;
+}
+
+.oneSlide .jcarousel-clip-horizontal {
+	width:245px;
+}
+
+.twoSlide .jcarousel-clip-horizontal {
+	width:491px;
+}
+
+.extraProduct.inBasket .jcarousel-clip-horizontal {
+	width:665px;
+	margin:0 24px;
+}
+
+.extraProduct.inBasket .oneSlide .jcarousel-clip-horizontal {
+	width:221px;
+}
+
+.extraProduct.inBasket .twoSlide .jcarousel-clip-horizontal {
+	width:443px;
+}
+
+.item6 .jcarousel-clip-horizontal {
+    width:779px;
+}
+
+.item5 .jcarousel-clip-horizontal {
+    width:649px;
+}
+
+.item4 .jcarousel-clip-horizontal {
+    width:519px;
+}
+
+.item3 .jcarousel-clip-horizontal {
+    width:389px;
+}
+
+.item2 .jcarousel-clip-horizontal {
+    width:259px;
+}
+
+.item1 .jcarousel-clip-horizontal {
+    width:129px;
+}
+
+.jcarousel-clip-vertical {
+    width:  75px;
+    height: 245px;
+}
+
+.jcarousel-item {
+    width: 130px;
+	min-height:70px;
+	margin:0;
+	padding:0;
+}
+
+.jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 10px;
+}
+
+.jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-item-vertical {
+    margin-bottom: 10px;
+}
+
+.jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-next-horizontal {
+    position: absolute;
+    top: 50%;
+    right: 1px;
+    width: 22px;
+    height: 31px;
+    cursor: pointer;
+	margin-top:-15px;
+    background:url(../images/arrow_scroll.png) -22px top no-repeat;
+}
+
+.extraProduct .jcarousel-next-horizontal {
+	background-position:right -61px;
+	right: 40px;
+	width: 29px;
+    height: 42px;
+	margin-top:-21px;
+}
+
+.extraProduct.inBasket .jcarousel-next-horizontal {
+	right: -8px;
+}
+
+.jcarousel-next-disabled-horizontal,
+.jcarousel-next-disabled-horizontal:hover,
+.jcarousel-next-disabled-horizontal:focus,
+.jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-position: -22px -31px;
+}
+
+.extraProduct .jcarousel-next-disabled-horizontal,
+.extraProduct .jcarousel-next-disabled-horizontal:hover,
+.extraProduct .jcarousel-next-disabled-horizontal:focus,
+.extraProduct .jcarousel-next-disabled-horizontal:active {
+    background-position:right -106px;
+}
+
+.jcarousel-prev-horizontal {
+    position: absolute;
+    top: 50%;
+    left: 1px;
+    width: 22px;
+    height: 31px;
+    cursor: pointer;
+	margin-top:-15px;
+    background:url(../images/arrow_scroll.png) left top no-repeat;
+}
+
+.extraProduct .jcarousel-prev-horizontal {
+	background-position:left -61px;
+	left: 40px;
+	width: 29px;
+    height: 42px;
+	margin-top:-21px;
+}
+
+
+.extraProduct.inBasket .jcarousel-prev-horizontal {
+	left: -8px;
+}
+.jcarousel-prev-disabled-horizontal,
+.jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-prev-disabled-horizontal:focus,
+.jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-position: left -31px;
+}
+
+.extraProduct .jcarousel-prev-disabled-horizontal,
+.extraProduct .jcarousel-prev-disabled-horizontal:hover,
+.extraProduct .jcarousel-prev-disabled-horizontal:focus,
+.extraProduct .jcarousel-prev-disabled-horizontal:active {
+    background-position: left -106px;
+}
+
+/**
+ *  Vertical Buttons
+ */
+.jcarousel-next-vertical {
+    position: absolute;
+    bottom: 5px;
+    left: 43px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url(next-vertical.png) no-repeat 0 0;
+}
+
+.jcarousel-next-vertical:hover,
+.jcarousel-next-vertical:focus {
+    background-position: 0 -32px;
+}
+
+.jcarousel-next-vertical:active {
+    background-position: 0 -64px;
+}
+
+.jcarousel-next-disabled-vertical,
+.jcarousel-next-disabled-vertical:hover,
+.jcarousel-next-disabled-vertical:focus,
+.jcarousel-next-disabled-vertical:active {
+    cursor: default;
+    background-position: 0 -96px;
+}
+
+.jcarousel-prev-vertical {
+    position: absolute;
+    top: 5px;
+    left: 43px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url(prev-vertical.png) no-repeat 0 0;
+}
+
+.jcarousel-prev-vertical:hover,
+.jcarousel-prev-vertical:focus {
+    background-position: 0 -32px;
+}
+
+.jcarousel-prev-vertical:active {
+    background-position: 0 -64px;
+}
+
+.jcarousel-prev-disabled-vertical,
+.jcarousel-prev-disabled-vertical:hover,
+.jcarousel-prev-disabled-vertical:focus,
+.jcarousel-prev-disabled-vertical:active {
+    cursor: default;
+    background-position: 0 -96px;
+}

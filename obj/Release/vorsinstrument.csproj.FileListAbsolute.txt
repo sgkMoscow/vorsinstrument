@@ -1,0 +1,9 @@
+G:\WORK\Programming\Sites\vorsinstrument.ru\vorsinstrument\vorsinstrument\bin\vorsinstrument.dll
+G:\WORK\Programming\Sites\vorsinstrument.ru\vorsinstrument\vorsinstrument\bin\vorsinstrument.pdb
+G:\WORK\Programming\Sites\vorsinstrument.ru\vorsinstrument\vorsinstrument\obj\Release\ResolveAssemblyReference.cache
+G:\WORK\Programming\Sites\vorsinstrument.ru\vorsinstrument\vorsinstrument\obj\Release\vorsinstrument.dll
+G:\WORK\Programming\Sites\vorsinstrument.ru\vorsinstrument\vorsinstrument\obj\Release\vorsinstrument.pdb
+D:\WORK\Programming\Sites\vorsinstrument.ru\vorsinstrument\vorsinstrument\bin\vorsinstrument.dll
+D:\WORK\Programming\Sites\vorsinstrument.ru\vorsinstrument\vorsinstrument\bin\vorsinstrument.pdb
+D:\WORK\Programming\Sites\vorsinstrument.ru\vorsinstrument\vorsinstrument\obj\Release\vorsinstrument.dll
+D:\WORK\Programming\Sites\vorsinstrument.ru\vorsinstrument\vorsinstrument\obj\Release\vorsinstrument.pdb
