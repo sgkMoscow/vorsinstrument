@@ -19,7 +19,7 @@
   <li>
     <p>
       <a href="ax_2.aspx">
-        НОЖОВКИ ПО ДЕРЕВУ&nbsp;&nbsp;
+        НОЖОВКИ ПО ДЕРЕВУ&nbsp;&nbsp;&nbsp;
         <span class="qty">(9)</span>
       </a>
     </p>
